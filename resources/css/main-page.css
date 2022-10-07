@@ -12,6 +12,8 @@
 
     --clr-gradient: linear-gradient(90deg, hsla(127, 29%, 45%, 1), hsla(127, 29%, 45%, 0));
 
+    --clr-hover-button: hsl(40, 100%, 47%);
+
     --ff-primary: 'Open Sans', sans-serif;
 
     --ff-accent: var(--ff-primary);
@@ -22,17 +24,22 @@
     --fw-semi-bold: 600;
     --fw-bold: 700;
 
-    --fs-300: 0.9375rem;
-    --fs-400: 1.375rem;
-    --fs-500: 1.875rem;
-    --fs-600: 2.8125rem;
+    --fs-300: 0.625rem;
+    --fs-400: 0.9375rem;
+    --fs-500: 1.125rem;
+    --fs-600: 1.375rem;
+    --fs-700: 1.875rem;
+    --fs-800: 2.8125rem;
 
-    --fs-body: var(--fs-300);
-    --fs-link: var(--fs-400);
-    --fs-primary-heading: var(--fs-600);
-    --fs-secondary-heading: var(--fs-500);
-    --fs-primary-button: var(--fs-500);
+    --fs-short: var(--fs-300);
+    --fs-body: var(--fs-400);
+    --fs-title-course: var(--fs-500);
+    --fs-link: var(--fs-600);
+    --fs-primary-heading: var(--fs-800);
+    --fs-secondary-heading: var(--fs-700);
+    --fs-primary-button: var(--fs-700);
     --fs-secondary-button: var(--fs-300);
+
 }
 
 /* ... */
@@ -53,10 +60,22 @@ h2 {
     color: var(--clr-neutral-900);
 }
 
+h3 {
+    font-size: var(--fs-secondary-heading);
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-800);
+    text-transform: capitalize;
+}
+
 /* Paragraph */
 p {
     font-size: var(--fs-body);
     font-weight: var(--fw-light);
+}
+
+p.short-copy {
+    /* font-size: var(--fs-300); */
+    font-weight: var(--fw-regular);
 }
 
 p.long-copy {
@@ -74,6 +93,13 @@ button {
 section {
     width: 63.79400945874934%;
     margin: 3.941145559642669% auto 0 auto;
+}
+
+/* Links */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: var(--clr-neutral-800);
 }
 
 /* ... */
@@ -126,9 +152,85 @@ header {
 }
 
 .hero-text-box button:hover {
-    background-color: hsl(40, 100%, 47%);
+    background-color: var(--clr-hover-button);
 }
 
 .hero-text-box>img {
     width: 350px;
 }
+
+/* ... */
+
+/* Recommend */
+.row {
+    margin-top: 2.4712%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row>a {
+    width: 18%;
+}
+
+.card {
+    width: 100%;
+    /*?Which one I should use 
+    If I use max-content the height thumbnail doesn't same but if I use 250px the height thumbnail same.
+    */
+    height: 250px;
+    /* height: max-content; */
+    /*? */
+    display: flex;
+    flex-direction: column;
+}
+
+.card>img {
+    width: 100%;
+    height: 50%;
+}
+
+/** accessibility concern */
+/*? If I hover on the link the accessibility poor otherwise If I on the card the accessibility good */
+/* .row>a:hover .content>p:last-child,
+.row>a:active .content>p:last-child {
+    color: var(--clr-primary);
+} */
+.card:hover>.content>p:last-child,
+.card:active>.content>p:last-child {
+    color: var(--clr-primary);
+}
+
+/** ... */
+
+.view {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content>p:first-child {
+    font-weight: var(--fw-bold);
+    margin-top: 6.248588059428879%;
+    font-size: var(--fs-title-course);
+}
+
+.view>img {
+    width: 5.3721%;
+    margin-right: 1.7907%;
+}
+
+.view,
+.content>p:last-child {
+    margin-top: 3.845284959648541%;
+}
+
+.content>p:last-child {
+    font-weight: var(--fw-semi-bold);
+}
+
+/* ... */
