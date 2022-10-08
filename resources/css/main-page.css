@@ -48,6 +48,10 @@
 /* || Reusable components */
 /* ----------------------------------------------- */
 /* html */
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 button {
     font-family: var(--ff-body);
