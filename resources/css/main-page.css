@@ -47,8 +47,19 @@
 /* ----------------------------------------------- */
 /* || Reusable components */
 /* ----------------------------------------------- */
+/* html */
+html,
+button {
+    font-family: var(--ff-body);
+}
 
 /* Headings */
+h1,
+h2,
+h3 {
+    font-family: var(--ff-accent);
+}
+
 h1 {
     font-size: var(--fs-primary-heading);
     font-weight: var(--fw-bold);
