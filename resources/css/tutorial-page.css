@@ -55,6 +55,7 @@ html {
 h1 {
     font-size: var(--fs-secondary-heading);
     font-weight: var(--fw-semi-bold);
+    color: var(--clr-neutral-900);
 }
 
 /* Paragraph */
@@ -68,22 +69,53 @@ p {
 }
 
 /* Span */
-span {
+.link-active {
     color: var(--clr-neutral-300);
 }
 
 /* Container */
 section,
+div,
 footer>div {
     width: 63.79400945874934%;
-    margin: 3.941145559642669% auto 0 auto;
+    margin: auto;
+}
+
+section,
+footer>div {
+    margin-top: 3.941145559642669%;
 }
 
 /* Links */
 a:link,
 a:visited {
     text-decoration: none;
+    color: var(--clr-neutral-300);
+}
+
+/* ... */
+
+/* || Header */
+header {
+    background-color: var(--clr-primary);
+}
+
+header>div {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-active:hover,
+.link-active:active {
     color: var(--clr-neutral-800);
+}
+
+header span::after {
+    content: '/';
+    display: inline-block;
+    margin: 0 5px;
 }
 
 /* ... */
