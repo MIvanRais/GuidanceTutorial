@@ -173,7 +173,7 @@ header {
 }
 
 .hero-text-box>img {
-    width: 350px;
+    width: 28.83031301482702%;
 }
 
 /* ... */
@@ -248,6 +248,22 @@ header {
 
 .content>p:last-child {
     font-weight: var(--fw-semi-bold);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    color: var(--clr-primary);
+    font-size: 35px;
+}
+
+.swiper-button-prev {
+    top: 50%;
+    left: 16%;
+}
+
+.swiper-button-next {
+    top: 50%;
+    right: 16%;
 }
 
 /* ... */
@@ -397,5 +413,70 @@ footer>div * {
 .line {
     margin-bottom: 7px;
 }
+
+/* ... */
+
+/* || Media Queries */
+@media (max-width: 1200px) {
+
+    /* || Reusable Components */
+    h2,
+    h3 {
+        font-size: 1.5625rem;
+    }
+
+    /* ... */
+    /* || Header */
+    header {
+        height: 60px;
+    }
+
+    /* ... */
+    /* || Hero Text Box */
+    .hero-text-box h1 {
+        font-size: 2.1875rem;
+    }
+
+    .hero-text-box button {
+        font-size: 25px;
+        width: max-content;
+    }
+
+    /* ... */
+
+    /* || Recommend */
+    .swiper-button-prev {
+        top: 43%;
+        left: 14%;
+    }
+
+    .swiper-button-next {
+        top: 43%;
+        right: 14%;
+    }
+
+    /* ... */
+
+    /* || Category */
+    .long-copy {
+        font-size: 18px;
+        padding: 15px 0 15px;
+    }
+
+    /* ... */
+
+    /* || Footer */
+    footer>div>p:first-child {
+        width: 65%;
+    }
+
+    /* ... */
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
 
 /* ... */
