@@ -534,8 +534,57 @@ footer>div * {
     /* ... */
 }
 
+@media (max-width: 768px) {
+
+    /* || Hero Text Box */
+    .hero-text-box>div {
+        padding-left: 10px;
+        margin: 10px 0;
+    }
+
+    .hero-text-box h1 {
+        font-size: 1.5625rem;
+    }
+
+    .hero-text-box button {
+        font-size: 1.125rem;
+    }
+
+    .hero-text-box>img {
+        display: none;
+    }
+
+    /* ... */
+
+    /* || category */
+    .list-category {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .list-category>a {
+        width: 100%;
+    }
+
+    .long-copy,
+    .list-category>a {
+        flex-basis: auto;
+    }
+
+    /* ... */
+    /* || Footer */
+    .form-window {
+        width: 400px;
+        background-size: 50% 100%;
+    }
+
+    footer>div>p:first-child {
+        width: 100%;
+    }
+
+    /* ... */
+}
 
 
-/* @media (max-width: 576px) {} */
 
 /* ... */
