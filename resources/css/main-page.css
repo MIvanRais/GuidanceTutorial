@@ -417,6 +417,13 @@ footer>div * {
 /* ... */
 
 /* || Media Queries */
+@media (max-width: 1759px) {
+    .space {
+        /* margin-bottom: 10px; */
+        margin-bottom: 0.8164331667809673%;
+    }
+}
+
 @media (max-width: 1200px) {
 
     /* || Reusable Components */
