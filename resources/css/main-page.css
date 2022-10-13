@@ -585,6 +585,28 @@ footer>div * {
     /* ... */
 }
 
+@media (max-width: 576px) {
 
+    /* || Recommend */
+    .swiper-button-prev {
+        top: 27%;
+        left: 8%;
+    }
+
+    .swiper-button-next {
+        top: 27%;
+        right: 8%;
+    }
+
+    /* ... */
+
+    /* || Footer */
+    .form-window {
+        width: 300px;
+        background-size: 50% 100%;
+    }
+
+    /* ... */
+}
 
 /* ... */
