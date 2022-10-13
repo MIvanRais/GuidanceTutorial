@@ -104,30 +104,45 @@
     <section class="category" id="get-started">
         <h3>let's start learning</h3>
         <div class="list-category">
-            <a href="#">
+            <a href="tutorial.html">
                 <p class="long-copy">Full Stack Developer</p>
             </a>
-            <a href="#">
+            <a href="tutorial.html">
                 <p class="long-copy">Frontend</p>
             </a>
-            <a href="#">
+            <a href="tutorial.html">
                 <p class="long-copy">Backend</p>
             </a>
-            <a href="#">
+            <a href="tutorial.html">
                 <p class="long-copy">JavaScript</p>
             </a>
-            <a href="#">
+            <a href="tutorial.html">
                 <p class="long-copy">Java</p>
             </a>
-            <a href="#">
+            <a href="tutorial.html">
                 <p class="long-copy">PHP</p>
             </a>
-            <a href="#">
+            <a href="tutorial.html">
                 <p class="long-copy">MySQL</p>
             </a>
-            <a href="#">
+            <a href="tutorial.html">
                 <p class="long-copy">Version Control System</p>
             </a>
+        </div>
+    </section>
+    <section class="popup-active" id="popup">
+        <div class="form-window">
+            <img src="resources/img/close.png" alt="Close Button" id="close">
+            <h1>Request<span> Tutorial</span></h1>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="off">
+                <label for="topic">Topic</label>
+                <input type="text" id="topic" autocomplete="off">
+                <label for="reason">Reason</label>
+                <input type="text" id="reason" autocomplete="off">
+            </div>
+            <button>Submit</button>
         </div>
     </section>
     <footer>
@@ -135,13 +150,12 @@
             <p>GuidanceTutorial is a platform to guide whom want to learn something.
                 The tutorials completely free you don’t worry about it. The main goal is
                 guiding someone to pick up the path and guide their learning.</p>
-            <p><a href="#" class="link-form">
-                    Feel free to request a tutorial you want it
-                </a></p>
+            <p class="popup-form" id="open">Feel free to request a tutorial you want it</p>
             <hr class="line">
             <p>GuidanceTutorial Copyright © 2022 All rights reserved.</p>
         </div>
     </footer>
+    <script defer src="resources/js/app.js"></script>
 </body>
 
 </html>

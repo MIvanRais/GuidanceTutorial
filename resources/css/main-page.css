@@ -52,6 +52,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    position: relative;
+}
+
 html,
 button {
     font-family: var(--ff-body);
@@ -97,6 +101,11 @@ p {
 button {
     font-size: var(--fs-secondary-heading);
     font-weight: var(--fw-regular);
+}
+
+.hero-text-box button:hover,
+.form-window>button:hover {
+    background-color: var(--clr-hover-button);
 }
 
 /* Section */
@@ -161,10 +170,6 @@ header {
     width: 39.43139678615575%;
     padding: 10px;
     text-transform: capitalize;
-}
-
-.hero-text-box button:hover {
-    background-color: var(--clr-hover-button);
 }
 
 .hero-text-box>img {
@@ -277,6 +282,89 @@ header {
 
 /* ... */
 
+/* || Form */
+/* TODO: I should change all of those absolute unit to relative unit */
+.popup-active {
+    margin: 0 auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-window {
+    position: absolute;
+    background-color: var(--clr-neutral-900);
+    box-shadow: 2px 3px 4px 0px hsla(0, 0%, 0%, 0.25);
+    padding: 30px;
+    border-radius: 5px;
+    background-image: url(../img/rectangle.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 533px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-window>img {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 94.37%;
+    right: 2.81%;
+    top: 3.06%;
+    bottom: 93.41%;
+    cursor: pointer;
+}
+
+.form-window>h1 {
+    margin-bottom: 30px;
+    font-size: var(--fs-secondary-heading);
+    text-align: center;
+    font-weight: var(--fw-bold);
+}
+
+.form-window span {
+    color: var(--clr-primary);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input>label {
+    margin-bottom: 5px;
+}
+
+.input>input {
+    margin-bottom: 25px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #181818;
+    border-radius: 5px;
+    padding: 5px;
+    height: 25px;
+}
+
+.input>input:last-child {
+    margin-bottom: 15px;
+}
+
+.form-window button {
+    width: max-content;
+    border-radius: 5px;
+    background-color: var(--clr-accent);
+    border: none;
+    padding: 4px 8px;
+}
+
+.input>*,
+.form-window>button {
+    font-size: var(--fs-400);
+}
+
+/* ... */
+
 /* || Footer */
 footer {
     background-color: var(--clr-primary);
@@ -291,14 +379,14 @@ footer>div>p:first-child {
     width: 40%;
 }
 
-.link-form:link,
-.link-form:visited {
+.popup-form {
+    display: inline-block;
     font-weight: var(--fw-bold);
     text-decoration: underline;
+    cursor: pointer;
 }
 
-.link-form:hover,
-.link-form:active {
+.popup-form:hover {
     text-decoration: none;
 }
 
