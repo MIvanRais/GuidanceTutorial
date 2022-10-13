@@ -473,10 +473,69 @@ footer>div * {
     /* ... */
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
 
-@media (max-width: 768px) {}
+    /* || Reusable Components */
+    h2,
+    h3,
+    .hero-text-box button {
+        font-size: 1.25rem;
+    }
 
-@media (max-width: 576px) {}
+    /* ... */
+
+    /* || header */
+    header {
+        height: 55px;
+    }
+
+    /* ... */
+    /* || Hero Text Box */
+    .hero-text-box h1 {
+        font-size: 1.875rem;
+    }
+
+    .hero-text-box button {
+        width: max-content;
+    }
+
+    /* ... */
+
+    /* || Recommend */
+    .swiper-button-prev {
+        top: 30%;
+        left: 10%;
+    }
+
+    .swiper-button-next {
+        top: 30%;
+        right: 10%;
+    }
+
+    /* ... */
+    /* || Category */
+    .list-category>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .long-copy {
+        font-size: 18px;
+        padding: 10px 0 10px;
+    }
+
+    /* ... */
+    /* || Footer */
+    footer>div>p:first-child {
+        width: 75%;
+    }
+
+    /* ... */
+}
+
+
+
+/* @media (max-width: 576px) {} */
 
 /* ... */
