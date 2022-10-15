@@ -139,17 +139,18 @@ header {
 
 /* || Hero Text Box */
 .hero-text-box {
+    width: 100%;
+    margin: 0;
     display: flex;
-    background: var(--clr-gradient);
+    background: linear-gradient(180deg, rgba(81, 146, 89, 0.8) 0%, rgba(81, 146, 89, 0) 100%);
 }
 
 .hero-text-box>div {
-    flex: 1 1 0;
+    width: 63.79400945874934%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 55px;
-    border-radius: 5px 0 0 5px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-text-box h1 {
@@ -167,13 +168,15 @@ header {
     border: none;
     background-color: var(--clr-accent);
     outline: none;
-    width: 39.43139678615575%;
+    width: 400px;
     padding: 10px;
     text-transform: capitalize;
 }
 
-.hero-text-box>img {
-    width: 28.83031301482702%;
+.hero-text-box img {
+    min-width: 230px;
+    width: 26.19439868204283%;
+    padding: 54px 0;
 }
 
 /* ... */
@@ -449,6 +452,10 @@ footer>div * {
         width: max-content;
     }
 
+    .hero-text-box img {
+        min-width: 200px;
+    }
+
     /* ... */
 
     /* || Recommend */
@@ -544,9 +551,8 @@ footer>div * {
 @media (max-width: 768px) {
 
     /* || Hero Text Box */
-    .hero-text-box>div {
-        padding-left: 10px;
-        margin: 10px 0;
+    .stand-out {
+        padding-top: 20px;
     }
 
     .hero-text-box h1 {
@@ -557,7 +563,7 @@ footer>div * {
         font-size: 1.125rem;
     }
 
-    .hero-text-box>img {
+    .hero-text-box img {
         display: none;
     }
 
