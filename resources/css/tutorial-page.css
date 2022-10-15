@@ -38,7 +38,10 @@
 /* ----------------------------------------------- */
 /* || Reusable components */
 /* ----------------------------------------------- */
-
+/* Universal */
+* {
+    box-sizing: border-box;
+}
 
 /* html */
 
@@ -138,7 +141,20 @@ header span::after {
 
 
 /* ... */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
 
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-3 {
+    width: 33.3333333%;
+}
 
 /* || Guidance */
 /* .row {
@@ -321,6 +337,11 @@ footer>div {
     padding: 43px 0;
 }
 
+footer>div>p:first-child {
+    line-height: 130%;
+    width: 40%;
+}
+
 .popup-form {
     display: inline-block;
     font-weight: var(--fw-bold);
@@ -342,42 +363,6 @@ footer>div * {
 
 
 /* ... */
-
-* {
-    box-sizing: border-box;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-
-.footer {
-    background-color: #0099cc;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 15px;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 33.3333333%;
-}
-
-.guidance {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 
 @media (min-width: 1201px) and (max-width: 1534px) {
 
@@ -456,6 +441,10 @@ footer>div * {
         width: 60%;
     }
 
+    footer>div>p:first-child {
+        width: 100%;
+    }
+
     /* ... */
 }
 
@@ -494,21 +483,4 @@ footer>div * {
     }
 
     /* ... */
-}
-
-.tombol {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.tulisan {
-    line-height: 20px;
 }
