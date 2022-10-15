@@ -141,6 +141,8 @@ header span::after {
 
 
 /* ... */
+
+/* || Guidance */
 .row::after {
     content: "";
     clear: both;
@@ -156,7 +158,6 @@ header span::after {
     width: 33.3333333%;
 }
 
-/* || Guidance */
 /* .row {
     width: 100%;
     display: flex;
