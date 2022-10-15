@@ -1,9 +1,5 @@
 /* ----------------------------------------------- */
-
-
 /* || Custom properties */
-
-
 /* ----------------------------------------------- */
 
 :root {
@@ -37,16 +33,10 @@
     --fs-secondary-button: var(--fs-300);
 }
 
-
 /* ... */
 
-
 /* ----------------------------------------------- */
-
-
 /* || Reusable components */
-
-
 /* ----------------------------------------------- */
 
 
@@ -151,8 +141,6 @@ header span::after {
 
 
 /* || Guidance */
-
-
 /* .row {
     width: 100%;
     display: flex;
@@ -217,7 +205,11 @@ header span::after {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    border-radius: 10pxs;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .card:hover {
@@ -383,19 +375,20 @@ footer>div * {
     width: 33.3333333%;
 }
 
-
-/* @media only screen and (max-width: 768px) {
-    [class*="col-"] {
-        width: 100%;
-    }
-} */
-
 .guidance {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 @media (max-width: 1200px) {
+
+    /* || Header */
+    header h1 {
+        font-size: 1.5625rem;
+    }
+
+    /* ... */
+
     [class*="col-"] {
         width: 50%;
     }
@@ -481,6 +474,10 @@ footer>div * {
 }
 
 @media (max-width: 576px) {
+    .kanan {
+        display: none;
+    }
+
     [class*="col-"] {
         width: 100%;
     }

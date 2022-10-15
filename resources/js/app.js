@@ -12,6 +12,7 @@ closeBtn.addEventListener('click', function () {
 })
 /* ... */
 
+// Swiper
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 5,
     spaceBetween: 50,
@@ -52,3 +53,4 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
 });
+/* ... */
