@@ -313,13 +313,15 @@ header {
 .form-window {
     position: absolute;
     background-color: var(--clr-neutral-900);
-    box-shadow: 2px 3px 4px 0px hsla(0, 0%, 0%, 0.25);
+    box-shadow: 0px 0px 4px 0px hsla(0, 0%, 0%, 0.25);
     padding: 30px;
     border-radius: 5px;
-    background-image: url(../img/rectangle.png);
+    /* background-image: url(../img/rectangle.png);
     background-repeat: no-repeat;
-    background-size: 50%;
-    width: 533px;
+    background-size: 50%; */
+    /* width: 500px; */
+    width: 25%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -340,11 +342,12 @@ header {
     font-size: var(--fs-secondary-heading);
     text-align: center;
     font-weight: var(--fw-bold);
-}
-
-.form-window span {
     color: var(--clr-primary);
 }
+
+/* .form-window span {
+    color: var(--clr-primary);
+} */
 
 .input {
     display: flex;
@@ -427,8 +430,15 @@ footer>div * {
 }
 
 @media (min-width: 1201px) and (max-width: 1534px) {
+
+    /* || Category */
     .list-category {
         height: 190px;
+    }
+
+    /* || Footer */
+    .form-window {
+        width: 50%;
     }
 }
 
@@ -485,6 +495,10 @@ footer>div * {
     /* ... */
 
     /* || Footer */
+    .form-window {
+        width: 50%;
+    }
+
     footer>div>p:first-child {
         width: 65%;
     }
@@ -545,7 +559,12 @@ footer>div * {
     }
 
     /* ... */
+
     /* || Footer */
+    .form-window {
+        width: 60%;
+    }
+
     footer>div>p:first-child {
         width: 75%;
     }
@@ -592,8 +611,7 @@ footer>div * {
     /* ... */
     /* || Footer */
     .form-window {
-        width: 400px;
-        background-size: 50% 100%;
+        width: 60%;
     }
 
     footer>div>p:first-child {
@@ -620,8 +638,7 @@ footer>div * {
 
     /* || Footer */
     .form-window {
-        width: 300px;
-        background-size: 50% 100%;
+        width: 70%;
     }
 
     /* ... */
