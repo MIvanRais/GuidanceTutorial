@@ -50,7 +50,6 @@ html {
     height: 100%;
 }
 
-
 /* body */
 
 body {
@@ -60,7 +59,6 @@ body {
     height: 100%;
 }
 
-
 /* Heading */
 
 h1 {
@@ -68,7 +66,6 @@ h1 {
     font-weight: var(--fw-semi-bold);
     color: var(--clr-neutral-900);
 }
-
 
 /* Paragraph */
 
@@ -81,13 +78,11 @@ p {
     font-weight: var(--fw-regular);
 }
 
-
 /* Span */
 
 .link-active {
     color: var(--clr-neutral-300);
 }
-
 
 /* Container */
 
@@ -102,7 +97,6 @@ header>div {
     margin: 0 auto;
 }
 
-
 /* Links */
 
 a:link,
@@ -111,9 +105,7 @@ a:visited {
     color: var(--clr-neutral-300);
 }
 
-
 /* ... */
-
 
 /* || Header */
 
@@ -139,17 +131,16 @@ header span::after {
     margin: 0 5px;
 }
 
-
 /* ... */
 
 /* || Guidance */
 .row::after {
-    content: "";
+    content: '';
     clear: both;
     display: block;
 }
 
-[class*="col-"] {
+[class*='col-'] {
     float: left;
     padding: 15px;
 }
@@ -159,17 +150,17 @@ header span::after {
 }
 
 /* .row {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 450px;
-}
-
-.row>a {
-    width: 21%;
-} */
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 450px;
+  }
+  
+  .row>a {
+      width: 21%;
+  } */
 
 .content {
     padding: 16px;
@@ -203,16 +194,15 @@ header span::after {
     color: var(--clr-neutral-800);
 }
 
-
 /* .card>img {
-    width: 100%;
-    height: 125px;
-}
-
-.card:hover>.content>p:last-child,
-.card:active>.content>p:last-child {
-    color: var(--clr-primary);
-} */
+      width: 100%;
+      height: 125px;
+  }
+  
+  .card:hover>.content>p:last-child,
+  .card:active>.content>p:last-child {
+      color: var(--clr-primary);
+  } */
 
 .card>img {
     width: 100%;
@@ -237,9 +227,41 @@ header span::after {
     padding: 2px 16px;
 }
 
+.frame {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+button {
+    margin-top: 3.215472855380089%;
+    outline: none;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+}
+
+/* 1 */
+.btn-1 {
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+}
 
 /* ... */
-
 
 /* || Form */
 /* TODO: I should change all of those absolute unit to relative unit */
@@ -257,8 +279,8 @@ header span::after {
     padding: 30px;
     border-radius: 5px;
     /* background-image: url(../img/rectangle.png);
-    background-repeat: no-repeat;
-    background-size: 50%; */
+      background-repeat: no-repeat;
+      background-size: 50%; */
     /* width: 500px; */
     width: 25%;
     max-width: 500px;
@@ -286,8 +308,8 @@ header span::after {
 }
 
 /* .form-window span {
-    color: var(--clr-primary);
-} */
+      color: var(--clr-primary);
+  } */
 
 .input {
     display: flex;
@@ -327,7 +349,6 @@ header span::after {
 
 /* ... */
 
-
 /* || Footer */
 
 footer {
@@ -362,6 +383,110 @@ footer>div * {
     margin-bottom: 7px;
 }
 
+/* ... */
+
+/* || Syllabus */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    /* max-width: 500px; */
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* ... */
 
@@ -382,7 +507,7 @@ footer>div * {
 
     /* ... */
 
-    [class*="col-"] {
+    [class*='col-'] {
         width: 50%;
     }
 
@@ -395,7 +520,7 @@ footer>div * {
 }
 
 @media (max-width: 992px) {
-    [class*="col-"] {
+    [class*='col-'] {
         width: 50%;
     }
 
@@ -413,7 +538,7 @@ footer>div * {
 }
 
 @media (max-width: 768px) {
-    [class*="col-"] {
+    [class*='col-'] {
         width: 100%;
     }
 
@@ -454,7 +579,7 @@ footer>div * {
         display: none;
     }
 
-    [class*="col-"] {
+    [class*='col-'] {
         width: 100%;
     }
 
@@ -476,6 +601,10 @@ footer>div * {
     .card>img {
         width: 100%;
         height: 175px;
+    }
+
+    .modal-content {
+        width: 100%;
     }
 
     /* || Footer */
