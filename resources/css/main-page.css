@@ -93,7 +93,6 @@ p {
 }
 
 .short-copy {
-    /* font-size: var(--fs-300); */
     font-weight: var(--fw-regular);
 }
 
@@ -198,12 +197,7 @@ header {
 
 .card {
     width: 100%;
-    /*?Which one I should use 
-    If I use max-content the height thumbnail doesn't same but if I use 250px the height thumbnail same.
-    */
     height: 250px;
-    /* height: max-content; */
-    /*? */
     display: flex;
     flex-direction: column;
 }
@@ -213,12 +207,6 @@ header {
     height: 50%;
 }
 
-/** accessibility concern */
-/*? If I hover on the link the accessibility poor otherwise If I on the card the accessibility good */
-/* .row>a:hover .content>p:last-child,
-.row>a:active .content>p:last-child {
-    color: var(--clr-primary);
-} */
 .card:hover>.content>p:last-child,
 .card:active>.content>p:last-child {
     color: var(--clr-primary);
@@ -306,7 +294,6 @@ header {
 /* ... */
 
 /* || Form */
-/* TODO: I should change all of those absolute unit to relative unit */
 .popup-active {
     margin: 0 auto;
     display: none;
@@ -320,10 +307,6 @@ header {
     box-shadow: 0px 0px 4px 0px hsla(0, 0%, 0%, 0.25);
     padding: 30px;
     border-radius: 5px;
-    /* background-image: url(../img/rectangle.png);
-    background-repeat: no-repeat;
-    background-size: 50%; */
-    /* width: 500px; */
     width: 25%;
     max-width: 500px;
     display: flex;
@@ -348,10 +331,6 @@ header {
     font-weight: var(--fw-bold);
     color: var(--clr-primary);
 }
-
-/* .form-window span {
-    color: var(--clr-primary);
-} */
 
 .input {
     display: flex;
