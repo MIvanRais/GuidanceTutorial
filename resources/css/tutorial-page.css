@@ -149,21 +149,9 @@ header span::after {
     width: 33.3333333%;
 }
 
-/* .row {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-content: space-between;
-      height: 450px;
-  }
-  
-  .row>a {
-      width: 21%;
-  } */
-
 .content {
     padding: 16px;
+    color: var(--clr-neutral-800);
 }
 
 .content>p:first-child {
@@ -194,15 +182,14 @@ header span::after {
     color: var(--clr-neutral-800);
 }
 
-/* .card>img {
-      width: 100%;
-      height: 125px;
-  }
-  
-  .card:hover>.content>p:last-child,
-  .card:active>.content>p:last-child {
-      color: var(--clr-primary);
-  } */
+.card:hover>.content>p:last-child,
+.card:active>.content>p:last-child {
+    color: var(--clr-primary);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
 .card>img {
     width: 100%;
@@ -217,10 +204,6 @@ header span::after {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .cardcontainer {
@@ -264,7 +247,6 @@ button {
 /* ... */
 
 /* || Form */
-/* TODO: I should change all of those absolute unit to relative unit */
 .popup-active {
     margin: 0 auto;
     display: none;
@@ -278,10 +260,6 @@ button {
     box-shadow: 0px 0px 4px 0px hsla(0, 0%, 0%, 0.25);
     padding: 30px;
     border-radius: 5px;
-    /* background-image: url(../img/rectangle.png);
-      background-repeat: no-repeat;
-      background-size: 50%; */
-    /* width: 500px; */
     width: 25%;
     max-width: 500px;
     display: flex;
@@ -306,10 +284,6 @@ button {
     font-weight: var(--fw-bold);
     color: var(--clr-primary);
 }
-
-/* .form-window span {
-      color: var(--clr-primary);
-  } */
 
 .input {
     display: flex;
@@ -507,9 +481,12 @@ footer>div * {
 
     /* ... */
 
+    /* || Guidance */
     [class*='col-'] {
         width: 50%;
     }
+
+    /* ... */
 
     /* || Footer */
     .form-window {
@@ -520,14 +497,13 @@ footer>div * {
 }
 
 @media (max-width: 992px) {
+
+    /* || Guidance */
     [class*='col-'] {
         width: 50%;
     }
 
-    section {
-        width: 90%;
-        margin: 0 auto;
-    }
+    /* ... */
 
     /* || Footer */
     .form-window {
@@ -538,10 +514,8 @@ footer>div * {
 }
 
 @media (max-width: 768px) {
-    [class*='col-'] {
-        width: 100%;
-    }
 
+    /* || Header */
     header>div {
         width: 90%;
         margin: 0 auto;
@@ -552,15 +526,19 @@ footer>div * {
         text-align: right;
     }
 
-    section {
-        width: 90%;
-        margin: 0 auto;
+    /* ... */
+
+    /* || Guidance */
+    [class*='col-'] {
+        width: 100%;
     }
 
     .card>img {
         width: 100%;
         height: 175px;
     }
+
+    /* ... */
 
     /* || Footer */
     .form-window {
@@ -595,7 +573,6 @@ footer>div * {
 
     section {
         width: 90%;
-        margin: 0 auto;
     }
 
     .card>img {
