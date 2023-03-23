@@ -1,0 +1,44 @@
+/* ----------------------------------------------- */
+/** || Reusable Styles */
+/* ----------------------------------------------- */
+* {
+    box-sizing: border-box;
+    color: var(--clr-font);
+}
+
+body {
+    background-color: var(--clr-primary);
+}
+
+header,
+section,
+footer {
+    margin: 0 5.660%;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+}
+
+/** header */
+header {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>button {
+    background-color: transparent;
+    border: none;
+}
+
+header>div>button {
+    font-size: var(--fs-small-12);
+    font-family: var(--ff-general);
+    background-color: transparent;
+    border: none;
+    font-weight: var(--fw-bold);
+}
+/** ----------- */
