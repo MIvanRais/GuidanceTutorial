@@ -1,0 +1,49 @@
+/* ----------------------------------------------- */
+/* || Custom properties */
+/* ----------------------------------------------- */
+:root {
+    --clr-primary: hsla(30, 41%, 91%, 1);
+    --clr-secondary: hsla(30, 42%, 86%, 1);
+
+    --clr-border: hsla(30, 28%, 73%, 1);
+
+    /** Color buttons */
+    --clr-button: hsla(40, 95%, 47%, 1);
+    --clr-btn-font: hsla(0, 0%, 100%, 1);
+    --clr-button-border: hsla(40, 77%, 40%, 1);
+    /** -----------------------*/
+
+    /** Color status requests */
+    --clr-respond: hsla(146, 42%, 36%, 1);
+    --clr-decline: hsla(354, 62%, 45%, 1);
+    --clr-new: hsla(0, 0%, 50%, 1);
+    /** -----------------------*/
+
+    --clr-free: hsla(146, 42%, 36%, 1);
+
+    --clr-popup-active: hsla(0, 0%, 0%, 0.5);
+
+    --clr-font: hsla(238, 22%, 24%, 1);
+
+    --ff-headline: 'Permanent Marker', cursive;
+    --ff-general: 'Open Sans', sans-serif;
+
+    /** Font size on phone viewport */
+    --fs-small-7: 0.4375rem;
+    --fs-small-10: 0.625rem;
+    --fs-small-11: 0.6875rem;
+    --fs-small-12: 0.75rem;
+    --fs-small-13: 0.8125rem;
+    --fs-small-14: 0.875rem;
+    --fs-small-15: 0.9375rem;
+    --fs-small-16: 1rem;
+    --fs-small-18: 1.125rem;
+    --fs-small-20: 1.25rem;
+    --fs-small-40: 2.5rem;
+    /** -----------------------*/
+
+    /** Font weight */
+    --fw-regular: 400;
+    --fw-bold: 700;
+    /** -----------------------*/
+}
