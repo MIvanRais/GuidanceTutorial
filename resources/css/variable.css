@@ -4,6 +4,7 @@
 :root {
     --clr-primary: hsla(30, 41%, 91%, 1);
     --clr-secondary: hsla(30, 42%, 86%, 1);
+    --clr-initial-btn: hsla(30, 42%, 88%, 1);
 
     --clr-border: hsla(30, 28%, 73%, 1);
 
