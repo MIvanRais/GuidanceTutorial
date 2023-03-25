@@ -27,10 +27,19 @@ button {
 }
 
 /** headings */
+h1,
+h2 {
+    font-weight: var(--fw-bold);
+}
+
 h1 {
     font-size: var(--fs-small-40);
-    font-weight: var(--fw-bold);
     margin-bottom: 10px;
+}
+
+h2 {
+    font-size: var(--fs-small-20);
+    margin-bottom: 20px;
 }
 
 /** header */
@@ -52,6 +61,7 @@ header>div>button {
     border: none;
     font-weight: var(--fw-bold);
 }
+
 /** ----------- */
 
 /** hero-text-box Section */
@@ -94,5 +104,69 @@ header>div>button {
 .hero-text-box>a:hover,
 .hero-text-box>a:active {
     background-color: var(--clr-secondary);
+}
+
+/** ----------- */
+
+/** recommended Section */
+.swiper {
+    position: relative;
+}
+
+.swiper-slide {
+    border: none;
+    background-color: transparent;
+}
+
+.swiper-slide>.card>p:last-child {
+    transition: color .2s ease-in;
+    -webkit-transition: color .2s ease-in;
+    -moz-transition: color .2s ease-in;
+    -ms-transition: color .2s ease-in;
+    -o-transition: color .2s ease-in;
+}
+
+.swiper-slide:hover>.card>p:last-child {
+    color: var(--clr-free);
+}
+
+.card>img {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.card>p {
+    font-size: var(--fs-small-16);
+    font-weight: var(--fw-bold);
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+.view {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.view>svg {
+    margin-right: 5px;
+}
+
+.view>p,
+.card>p:last-child {
+    font-size: var(--fs-small-10);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none;
+    color: var(--clr-border);
+    font-size: 30px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 0 !important;
 }
 /** ----------- */
