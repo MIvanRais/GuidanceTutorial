@@ -110,12 +110,13 @@ nav>a {
 
 /** ----------- */
 
-/** modal burger menu */
+/** modal login & modal register */
 .modal {
     margin-bottom: 0;
 }
 
-.modal-login {
+.modal-login,
+.modal-register {
     border: none;
     width: calc(100% - 32px);
     max-width: calc(100% - 32px);
@@ -128,31 +129,36 @@ nav>a {
     margin-top: 100px;
 }
 
-.modal-login>div:first-child {
+.modal-login>div:first-child,
+.modal-register>div:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.modal-login h1 {
+.modal-login h1,
+.modal-register h1 {
     margin-bottom: 0;
     font-size: var(--fs-small-20);
 }
 
-.modal-login>div:first-child>svg {
+.modal-login>div:first-child>svg,
+.modal-register>div:first-child>svg {
     cursor: pointer;
 }
 
 .username-group,
-.password-group {
+.password-group,
+.email-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
 
 label[for="username"],
-label[for="password"] {
+label[for="password"],
+label[for="email"] {
     margin-bottom: 5px;
     font-size: var(--fs-small-14);
 }
@@ -191,12 +197,14 @@ button[type="submit"]:hover {
     background-color: var(--clr-secondary);
 }
 
-.modal-login>p {
+.modal-login>p,
+.modal-register>p {
     font-size: var(--fs-small-12);
     font-weight: var(--fw-regular);
 }
 
-.modal-login>p>span {
+.modal-login>p>span,
+.modal-register>p>span {
     cursor: pointer;
     color: var(--clr-new);
     transition: color .2s ease-in;
@@ -206,7 +214,8 @@ button[type="submit"]:hover {
     -o-transition: color .2s ease-in;
 }
 
-.modal-login>p>span:hover {
+.modal-login>p>span:hover,
+.modal-register>p>span:hover {
     color: var(--clr-font);
 }
 
