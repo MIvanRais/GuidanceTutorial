@@ -20,15 +20,38 @@ closeMenuBtn.addEventListener('click', () => {
 // **modal login //
 const loginBtn = document.querySelector("#open-modal-login");
 const modalLogin = document.querySelector("#modal-login");
-const closeLogin = document.querySelector(".modal-login #close-btn")
+const closeLoginBtn = document.querySelector(".modal-login #close-btn")
 
 loginBtn.addEventListener('click', () => {
     modalLogin.showModal();
     document.body.classList.add("scroll-hidden");
 })
 
-closeLogin.addEventListener('click', () => {
+closeLoginBtn.addEventListener('click', () => {
     modalLogin.close();
     document.body.classList.remove("scroll-hidden");
+})
+// **--------------//
+
+// **modal register //
+const registerBtn = document.querySelector("#modal-login>p>span");
+const modalRegister = document.querySelector("#modal-register");
+const loginForm = document.querySelector("#modal-register>p>span");
+const closeRegisterBtn = document.querySelector("#modal-register #close-btn");
+
+registerBtn.addEventListener('click', () => {
+    modalLogin.close();
+    modalRegister.showModal();
+    document.body.classList.add("scroll-hidden");
+})
+
+loginForm.addEventListener('click', () => {
+    modalRegister.close();
+    modalLogin.showModal();
+})
+
+closeRegisterBtn.addEventListener('click', () => {
+    document.body.classList.remove("scroll-hidden");
+    modalRegister.close();
 })
 // **--------------//
