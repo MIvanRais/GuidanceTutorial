@@ -30,9 +30,12 @@
     <dialog class="modal-menu" id="modal-menu">
         <div>
             <h1>GuidanceTutorial</h1>
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="close-btn">
-                <path d="M1.37691 14.6301L0.299988 13.5626L6.22306 7.69174L0.299988 1.82083L1.37691 0.753387L7.29999 6.6243L13.2231 0.753387L14.3 1.82083L8.37691 7.69174L14.3 13.5626L13.2231 14.6301L7.29999 8.75917L1.37691 14.6301Z" fill="#30314B"/>
-                </svg>
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                id="close-btn">
+                <path
+                    d="M1.37691 14.6301L0.299988 13.5626L6.22306 7.69174L0.299988 1.82083L1.37691 0.753387L7.29999 6.6243L13.2231 0.753387L14.3 1.82083L8.37691 7.69174L14.3 13.5626L13.2231 14.6301L7.29999 8.75917L1.37691 14.6301Z"
+                    fill="#30314B" />
+            </svg>
         </div>
         <hr>
         <div>
@@ -47,14 +50,42 @@
                 <hr>
             </nav>
             <form action="#" method="post">
-                <button><span><svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.75 9C0.55 9 0.375 8.925 0.225 8.775C0.075 8.625 0 8.45 0 8.25V0.75C0 0.55 0.075 0.375 0.225 0.225C0.375 0.075 0.55 0 0.75 0H4.3875V0.75H0.75V8.25H4.3875V9H0.75ZM6.825 6.6875L6.2875 6.15L7.5625 4.875H3.1875V4.125H7.5375L6.2625 2.85L6.8 2.3125L9 4.5125L6.825 6.6875Z" fill="#30314B"/>
-                    </svg>
+                <button><span><svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.75 9C0.55 9 0.375 8.925 0.225 8.775C0.075 8.625 0 8.45 0 8.25V0.75C0 0.55 0.075 0.375 0.225 0.225C0.375 0.075 0.55 0 0.75 0H4.3875V0.75H0.75V8.25H4.3875V9H0.75ZM6.825 6.6875L6.2875 6.15L7.5625 4.875H3.1875V4.125H7.5375L6.2625 2.85L6.8 2.3125L9 4.5125L6.825 6.6875Z"
+                                fill="#30314B" />
+                        </svg>
                     </span>Logout</button>
-                    <hr>
+                <hr>
             </form>
         </div>
     </dialog>
+    <section class="modal">
+        <dialog class="modal-login" id="modal-login">
+            <div>
+                <h1>Login</h1>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    id="close-btn">
+                    <path
+                        d="M1.37691 14.6301L0.299988 13.5626L6.22306 7.69174L0.299988 1.82083L1.37691 0.753387L7.29999 6.6243L13.2231 0.753387L14.3 1.82083L8.37691 7.69174L14.3 13.5626L13.2231 14.6301L7.29999 8.75917L1.37691 14.6301Z"
+                        fill="#30314B" />
+                </svg>
+            </div>
+            <form action="something" method="post">
+                <div class="username-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="" id="username" required>
+                </div>
+                <div class="password-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="" id="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>New GuidanceTutorial? <span>Create Account</span></p>
+        </dialog>
+    </section>
     <header>
         <button id="open-menu">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -277,9 +308,9 @@
     <footer>
         <p>GuidanceTutorial is a platform to guide whom want to learn something. The tutorials completely free you don’t
             worry about it. The main goal is guiding someone to pick up the path and guide their learning.</p>
-            <button>Feel free to request a tutorial if you want it</button>
-            <hr>
-            <p>GuidanceTutorial Copyright © 2023 All rights reserved.</p>
+        <button>Feel free to request a tutorial if you want it</button>
+        <hr>
+        <p>GuidanceTutorial Copyright © 2023 All rights reserved.</p>
     </footer>
 
     <!--** Swiper JS -->
