@@ -116,7 +116,8 @@ nav>a {
 }
 
 .modal-login,
-.modal-register {
+.modal-register,
+.modal-request {
     border: none;
     width: calc(100% - 32px);
     max-width: calc(100% - 32px);
@@ -144,7 +145,8 @@ nav>a {
 }
 
 .modal-login>div:first-child>svg,
-.modal-register>div:first-child>svg {
+.modal-register>div:first-child>svg,
+.modal-request>div:first-child>svg {
     cursor: pointer;
 }
 
@@ -163,7 +165,8 @@ label[for="email"] {
     font-size: var(--fs-small-14);
 }
 
-input {
+input,
+textarea {
     outline: none;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -459,4 +462,35 @@ footer>p:last-child {
     font-weight: var(--fw-regular);
 }
 
+/** ----------- */
+
+/** modal request */
+.modal-request>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-request h1{
+    font-size: var(--fs-small-20);
+    margin-bottom: 0;
+}
+
+.topic-group,
+.reason-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label[for="topic"],
+label[for="reason"]{
+    margin-bottom: 10px;
+}
+
+textarea{
+    resize: vertical;
+    height: 200px;
+}
 /** ----------- */

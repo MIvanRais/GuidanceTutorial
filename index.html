@@ -341,6 +341,30 @@
         <hr>
         <p>GuidanceTutorial Copyright © 2023 All rights reserved.</p>
     </footer>
+    <section class="modal">
+        <dialog class="modal-request" id="modal-request">
+            <div>
+                <h1>Request Tutorial</h1>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    id="close-btn">
+                    <path
+                        d="M1.37691 14.6301L0.299988 13.5626L6.22306 7.69174L0.299988 1.82083L1.37691 0.753387L7.29999 6.6243L13.2231 0.753387L14.3 1.82083L8.37691 7.69174L14.3 13.5626L13.2231 14.6301L7.29999 8.75917L1.37691 14.6301Z"
+                        fill="#30314B" />
+                </svg>
+            </div>
+            <form action="#" method="post">
+                <div class="topic-group">
+                    <label for="topic">Topic</label>
+                    <input type="text" name="" id="topic" required>
+                </div>
+                <div class="reason-group">
+                    <label for="reason">Reason</label>
+                    <textarea name="" id="reason" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </dialog>
+    </section>
 
     <!--** Swiper JS -->
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
