@@ -36,6 +36,11 @@ h2 {
     font-size: var(--fs-small-16);
 }
 
+button {
+    cursor: pointer;
+    padding: 0;
+}
+
 /** horizontal rule */
 hr {
     border: none;
@@ -71,7 +76,7 @@ header>p>span::after {
     margin: 0 5px;
 }
 
-a[href="index.html"]{
+a[href="index.html"] {
     text-decoration: none;
     color: var(--clr-new);
     transition: color .2s ease-in;
@@ -81,8 +86,93 @@ a[href="index.html"]{
     -o-transition: color .2s ease-in;
 }
 
-a[href="index.html"]:hover{
+a[href="index.html"]:hover {
     color: var(--clr-font);
+}
+
+/** ----------- */
+
+/** categories Section */
+
+.category-slider {
+    margin-bottom: 25px;
+}
+
+.category-slider button {
+    font-size: var(--fs-small-10);
+    background-color: var(--clr-initial-btn);
+    border: 1px solid var(--clr-border);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 4px 15px;
+    width: max-content !important;
+    transition: background-color .2s ease-in;
+    -webkit-transition: background-color .2s ease-in;
+    -moz-transition: background-color .2s ease-in;
+    -ms-transition: background-color .2s ease-in;
+    -o-transition: background-color .2s ease-in;
+}
+
+.category-slider button:hover {
+    background-color: var(--clr-secondary);
+}
+
+.lesson button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+}
+
+.lesson img {
+    width: 60%;
+    max-width: 178px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.lesson p {
+    text-align: start;
+}
+
+.lesson .content>p:first-child {
+    font-size: var(--fs-small-16);
+    font-weight: var(--fw-bold);
+    margin-bottom: 5px;
+}
+
+.lesson .content>p:last-child {
+    font-size: var(--fs-small-10);
+    font-weight: var(--fw-bold);
+}
+
+.lesson .content>p:last-child {
+    transition: color .2s ease-in;
+    -webkit-transition: color .2s ease-in;
+    -moz-transition: color .2s ease-in;
+    -ms-transition: color .2s ease-in;
+    -o-transition: color .2s ease-in;
+}
+
+.lesson button:hover>.content>p:last-child {
+    color: var(--clr-free);
+}
+
+.view {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.view>svg {
+    margin-right: 5px;
+}
+
+.view>p,
+.card>p:last-child {
+    font-size: var(--fs-small-10);
 }
 
 /** ----------- */
