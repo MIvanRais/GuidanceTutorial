@@ -93,6 +93,11 @@ a[href="index.html"]:hover {
 /** ----------- */
 
 /** categories Section */
+.categories {
+    /** make the element to fill the remaining viewport height */
+    min-height: 100vh;
+}
+
 .category-slider {
     margin-bottom: 25px;
 }
