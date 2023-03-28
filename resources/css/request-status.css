@@ -1,0 +1,89 @@
+/* ----------------------------------------------- */
+/** || Reusable Styles */
+/* ----------------------------------------------- */
+* {
+    box-sizing: border-box;
+    color: var(--clr-font);
+    font-family: var(--ff-general) !important;
+}
+
+body {
+    background-color: var(--clr-primary);
+}
+
+/** sections */
+header,
+section,
+footer {
+    margin: 0 5.660%;
+}
+
+section {
+    margin-bottom: 55px;
+}
+
+/** headings */
+h1,
+h2 {
+    font-weight: var(--fw-bold);
+}
+
+h1 {
+    font-size: var(--fs-small-20);
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+}
+
+/** horizontal rule */
+hr {
+    border: none;
+    border-bottom: .5px solid var(--clr-border);
+    ;
+}
+
+/** hidden scroll style */
+.scroll-hidden {
+    overflow: hidden;
+}
+
+dialog::backdrop {
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+/** header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+
+header>p {
+    font-size: var(--fs-small-12);
+    font-weight: var(--fw-regular);
+}
+
+header>p>span::after {
+    content: '/';
+    margin: 0 5px;
+}
+
+a[href="index.html"] {
+    text-decoration: none;
+    color: var(--clr-new);
+    transition: color .2s ease-in;
+    -webkit-transition: color .2s ease-in;
+    -moz-transition: color .2s ease-in;
+    -ms-transition: color .2s ease-in;
+    -o-transition: color .2s ease-in;
+}
+
+a[href="index.html"]:hover {
+    color: var(--clr-font);
+}
+
+/** ----------- */
