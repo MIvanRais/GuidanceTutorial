@@ -87,3 +87,44 @@ a[href="index.html"]:hover {
 }
 
 /** ----------- */
+
+/** list notification Section */
+.list-notification {
+    min-height: 100vh;
+}
+
+.list-notification button {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+img[alt="Thumbnail"] {
+    width: 60%;
+    max-width: 178px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content>div>p:first-child {
+    text-align: start;
+}
+
+.content>div>p:last-child {
+    text-align: end;
+    font-size: var(--fs-small-10);
+    color: var(--clr-new);
+}
+
+/** ----------- */
