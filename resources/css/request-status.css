@@ -87,3 +87,72 @@ a[href="index.html"]:hover {
 }
 
 /** ----------- */
+
+/** list request Section */
+.content>*{
+    margin-left: 9px;
+}
+
+.list-request{
+    min-height: 100vh;
+}
+
+.topic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.topic>p:first-child{
+    font-size: var(--fs-small-14);
+}
+
+.topic>p:last-child{
+    color: var(--clr-btn-font);
+    font-size: var(--fs-small-7);
+    font-weight: var(--fw-bold);
+}
+
+.message{
+    font-size: var(--fs-small-11);
+    margin-bottom: 6px;
+}
+
+.content>p:last-child{
+    font-size: var(--fs-small-10);
+    color: var(--clr-new);
+    font-weight: var(--fw-regular);
+    text-align: end;
+}
+
+.respond {
+    background-color: var(--clr-respond);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.declined {
+    background-color: var(--clr-decline);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.new {
+    background-color: var(--clr-new);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.border-status-respond{
+    border-left: 3px solid var(--clr-respond);
+}
+
+.border-status-decline{
+    border-left: 3px solid var(--clr-decline);
+}
+
+.border-status-new{
+    border-left: 3px solid var(--clr-new);
+}
+/** ----------- */
