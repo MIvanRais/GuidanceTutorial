@@ -156,3 +156,34 @@ a[href="index.html"]:hover {
     border-left: 3px solid var(--clr-new);
 }
 /** ----------- */
+
+/** footer */
+footer {
+    margin-bottom: 55px;
+}
+
+footer>p:first-child {
+    font-size: var(--fs-small-14);
+    font-weight: var(--fw-regular);
+    line-height: 128%;
+    margin-bottom: 15px;
+}
+
+footer>button {
+    border: none;
+    background-color: transparent;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-small-12);
+    text-decoration: underline;
+}
+
+footer>button:hover {
+    text-decoration: none;
+}
+
+footer>p:last-child {
+    font-size: var(--fs-small-10);
+    font-weight: var(--fw-regular);
+}
+
+/** ----------- */
