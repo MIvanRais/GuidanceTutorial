@@ -40,7 +40,6 @@ h2 {
 h1 {
     font-size: var(--fs-small-40);
     margin-bottom: 10px;
-    font-family: var(--ff-headline) !important;
 }
 
 h2 {
@@ -252,6 +251,10 @@ header>div>button {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.hero-text-box h1 {
+    font-family: var(--ff-headline) !important;
 }
 
 .hero-text-box p {
