@@ -40,6 +40,7 @@ h2 {
 h1 {
     font-size: var(--fs-small-40);
     margin-bottom: 10px;
+    font-family: var(--ff-headline) !important;
 }
 
 h2 {
@@ -465,32 +466,33 @@ footer>p:last-child {
 /** ----------- */
 
 /** modal request */
-.modal-request>div:first-child{
+.modal-request>div:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.modal-request h1{
+.modal-request h1 {
     font-size: var(--fs-small-20);
     margin-bottom: 0;
 }
 
 .topic-group,
-.reason-group{
+.reason-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
 label[for="topic"],
-label[for="reason"]{
+label[for="reason"] {
     margin-bottom: 10px;
 }
 
-textarea{
+textarea {
     resize: vertical;
     height: 200px;
 }
+
 /** ----------- */
