@@ -35,6 +35,51 @@
         <img src="resources/images/Avatar.png" alt="Avatar">
         <h1>Fullname</h1>
     </header>
+    <section class="update-profile">
+        <form action="#" method="post">
+            <div>
+                <div>
+                    <label for="firstname">Firstname</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div>
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="" id="email" required>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input type="text" name="" id="address" required>
+            </div>
+            <div class="gender-field">
+                <p>Gender</p>
+                <div>
+                    <div>
+                        <input type="radio" name="gender" id="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="phone-number">Phone Number</label>
+                <input type="text" name="" id="phone-number" required>
+            </div>
+            <div class="photo-profile-field">
+                <label for="photo_profile">Choose Image</label>
+                <p>No file currently selected for upload</p>
+                <input type="file" name="photo_profile" id="photo_profile" accept=".jpg, .jpeg, .png" required>
+            </div>
+            <button type="submit">Update</button>
+        </form>
+    </section>
 
     <script defer src="resources/js/update-profile.js"></script>
 </body>
