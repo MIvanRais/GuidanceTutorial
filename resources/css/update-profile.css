@@ -1,0 +1,48 @@
+/* ----------------------------------------------- */
+/** || Reusable Styles */
+/* ----------------------------------------------- */
+* {
+    box-sizing: border-box;
+    color: var(--clr-font);
+    font-family: var(--ff-general) !important;
+}
+
+body {
+    background-color: var(--clr-primary);
+}
+
+/** sections */
+header,
+section {
+    margin: 0 5.660%;
+}
+
+section {
+    margin-bottom: 55px;
+}
+
+/** headings */
+h1 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-small-16);
+}
+
+/** header */
+header {
+    margin-top: 22px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    margin-right: 15px;
+}
+
+img {
+    margin-right: 10px;
+    width: 46px;
+    clip-path: circle();
+}
+
+/** ----------- */
