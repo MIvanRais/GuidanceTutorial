@@ -559,6 +559,13 @@ textarea {
 
     /** ----------- */
 
+    /** modal login, modal register & modal request */
+    .modal-login, 
+    .modal-register,
+    .modal-request{
+        width: 384px;
+    }
+    /** ----------- */
 }
 
 /** ----------- */
