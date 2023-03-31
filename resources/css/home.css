@@ -249,27 +249,33 @@ header>div>button {
 /** hero-text-box Section */
 .hero-text-box {
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
-.hero-text-box h1 {
-    font-family: var(--ff-headline) !important;
-}
-
-.hero-text-box p {
-    font-size: var(--fs-small-14);
-    font-weight: var(--fw-regular);
-    line-height: 135%;
+.hero-text-box>div {
     margin-bottom: 35px;
 }
 
-.hero-text-box>a {
-    margin: 0 auto;
+.hero-text-box>div>img {
+    width: 100%;
 }
 
-.hero-text-box>a:link,
-.hero-text-box>a:visited {
+.hero-text-box>div>div>h1 {
+    font-family: var(--ff-headline) !important;
+}
+
+.hero-text-box>div>div>p {
+    font-size: var(--fs-small-14);
+    font-weight: var(--fw-regular);
+    line-height: 135%;
+}
+
+.hero-text-box>div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-text-box>div:last-child>a:link,
+.hero-text-box>div:last-child>a:visited {
     border: 2px solid var(--clr-border);
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -287,8 +293,8 @@ header>div>button {
     -o-transition: background-color .2s ease-in;
 }
 
-.hero-text-box>a:hover,
-.hero-text-box>a:active {
+.hero-text-box>div:last-child>a:hover,
+.hero-text-box>div:last-child>a:active {
     background-color: var(--clr-secondary);
 }
 
@@ -524,6 +530,35 @@ textarea {
     }
 
     /** ----------- */
+
+    /** hero-text-box Section */
+    .hero-text-box>div {
+        display: flex;
+    }
+
+    .hero-text-box>div>img {
+        order: 2;
+        width: 400px;
+    }
+
+    .hero-text-box>div>div {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-text-box>div>div>h1 {
+        width: 50%;
+        font-size: var(--fs-laptop-55);
+    }
+
+    .hero-text-box>div>div>p {
+        width: 60%;
+    }
+
+    /** ----------- */
+
 }
 
 /** ----------- */

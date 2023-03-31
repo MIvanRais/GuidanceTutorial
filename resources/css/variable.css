@@ -45,6 +45,7 @@
 
     /** Font size at laptop viewport */
     --fs-laptop-16: 1rem;
+    --fs-laptop-55: 3.4375rem;
     /** -----------------------*/
 
     /** Font weight */
