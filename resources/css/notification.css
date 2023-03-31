@@ -283,6 +283,13 @@ button[type="submit"]:hover {
     }
 
     /** ----------- */
+
+    /** modal request */
+    .modal-request {
+        width: 384px;
+    }
+
+    /** ----------- */
 }
 
 /** ----------- */
