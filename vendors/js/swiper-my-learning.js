@@ -8,3 +8,10 @@ const categorySliderSwiper = new Swiper('.category-slider-swiper', {
     loopFillGroupWithBlank: false,
     grabCursor: 'true',
 });
+
+// **disabled slider of the category slider 
+const containerSlides = document.querySelector('.swiper-wrapper');
+
+if (window.innerWidth >= '1280') {
+    containerSlides.classList.add('disabled-slider');
+}

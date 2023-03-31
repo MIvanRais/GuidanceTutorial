@@ -53,6 +53,14 @@ hr {
     overflow: hidden;
 }
 
+.disabled-slider {
+    transform: translate3d(0px, 0, 0) !important;
+    -webkit-transform: translate3d(0px, 0, 0) !important;
+    -moz-transform: translate3d(0px, 0, 0) !important;
+    -ms-transform: translate3d(0px, 0, 0) !important;
+    -o-transform: translate3d(0px, 0, 0) !important;
+}
+
 dialog::backdrop {
     background-color: hsla(0, 0%, 0%, 0.5);
 }
@@ -297,13 +305,50 @@ button[type="submit"]:hover {
 /** ----------- */
 
 /** At 1280px Viewport */
-@media(min-width:1280px){
-/* ----------------------------------------------- */
-/** || Reusable Styles */
-/* ----------------------------------------------- */
+@media(min-width:1280px) {
+    /* ----------------------------------------------- */
+    /** || Reusable Styles */
+    /* ----------------------------------------------- */
 
-h1{
-    font-size: var(--fs-laptop-23);
+    h1 {
+        font-size: var(--fs-laptop-23);
+    }
+
+    /** categories Section */
+    .category-slider button {
+        font-size: var(--fs-laptop-14);
+    }
+
+    .lesson>form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 20px;
+        row-gap: 25px;
+    }
+
+    .lesson button {
+        flex-direction: column;
+    }
+
+    .lesson img {
+        width: 100%;
+        max-width: none;
+        height: 125px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .lesson .content>p:first-child {
+        font-size: var(--fs-laptop-18);
+    }
+
+    .lesson .content>p:last-child {
+        font-size: var(--fs-laptop-12);
+    }
+
+    /** ----------- */
+
 }
-}
+
 /** ----------- */
