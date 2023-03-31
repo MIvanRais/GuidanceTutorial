@@ -21,8 +21,8 @@ const recommendedSwiper = new Swiper('.recommended-swiper', {
     },
     breakpoints: {
         1280: {
-            slidesPerView: 4,
-            slidesPerGroup: 4,
+            slidesPerView: 5,
+            slidesPerGroup: 5,
         },
     }
 });
