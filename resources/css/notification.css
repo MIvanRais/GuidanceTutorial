@@ -255,7 +255,25 @@ button[type="submit"]:hover {
         font-size: var(--fs-laptop-23);
     }
 
+    /** list-notification Section */
+    .list-notification-group{
+        width: 400px;
+        height: 400px;
+        overflow-y: scroll;
+    }
 
+    .list-notification-group>form>button{
+        margin-bottom: 20px;
+    }
+
+    .content>div>p:first-child{
+        font-size: var(--fs-laptop-16);
+    }
+
+    .content>div>p:last-child{
+        font-size: var(--fs-laptop-12);
+    }
+    /** ----------- */
 }
 
 /** ----------- */
