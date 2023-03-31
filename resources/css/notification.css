@@ -107,8 +107,9 @@ img[alt="Thumbnail"] {
 }
 
 .content {
+    /* width: 100%; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .content>div {
@@ -240,6 +241,21 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--clr-secondary);
+}
+
+/** ----------- */
+
+/** At 1280px Viewport */
+@media(min-width:1280px) {
+    /* ----------------------------------------------- */
+    /** || Reusable Styles */
+    /* ----------------------------------------------- */
+
+    h1 {
+        font-size: var(--fs-laptop-23);
+    }
+
+
 }
 
 /** ----------- */
