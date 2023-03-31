@@ -32,8 +32,15 @@ const categorySliderSwiper = new Swiper('.category-slider-swiper', {
     slidesPerView: 2,
     spaceBetween: 8,
     slidesPerGroup: 1,
-    // loop: true,
+    loop: false,
     centerSlide: 'true',
     loopFillGroupWithBlank: false,
     grabCursor: 'true',
 });
+
+// **disabled slider of the category slider 
+const containerSlides = document.querySelector('.category-slider .swiper-wrapper');
+
+if (window.innerWidth >= '1280') {
+    containerSlides.classList.add('disabled-slider');
+}

@@ -73,4 +73,17 @@ function addElements(widthViewport) {
 }
 
 addElements(minWidth1280); //** Call function at run time
+
+// ** remove hr elements inside lesson 
+const hrs = document.querySelectorAll('.lesson>form>hr');
+
+function removeHrs(widthViewport) {
+    if (widthViewport.matches) {
+        for (const hr of hrs) {
+            hr.remove();
+        }
+    }
+}
+
+removeHrs(minWidth1280); //** Call function at run time
 // ** -----------

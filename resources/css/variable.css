@@ -45,6 +45,7 @@
 
     /** Font size at laptop viewport */
     --fs-laptop-12: 0.75rem;
+    --fs-laptop-14: 0.875rem;
     --fs-laptop-16: 1rem;
     --fs-laptop-18: 1.125rem;
     --fs-laptop-23: 1.4375rem;

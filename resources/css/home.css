@@ -63,6 +63,14 @@ dialog::backdrop {
     background-color: hsla(0, 0%, 0%, 0.5);
 }
 
+.disabled-slider {
+    transform: translate3d(0px, 0, 0) !important;
+    -webkit-transform: translate3d(0px, 0, 0) !important;
+    -moz-transform: translate3d(0px, 0, 0) !important;
+    -ms-transform: translate3d(0px, 0, 0) !important;
+    -o-transform: translate3d(0px, 0, 0) !important;
+}
+
 /** modal burger menu */
 .modal-menu {
     width: 100%;
@@ -365,6 +373,10 @@ header>div>button {
 /** ----------- */
 
 /** categories Section */
+.categories {
+    min-height: 100vh;
+}
+
 .categories>h2 {
     margin-bottom: 15px;
 }
@@ -427,9 +439,6 @@ header>div>button {
 .lesson .content>p:last-child {
     font-size: var(--fs-small-10);
     font-weight: var(--fw-bold);
-}
-
-.lesson .content>p:last-child {
     transition: color .2s ease-in;
     -webkit-transition: color .2s ease-in;
     -moz-transition: color .2s ease-in;
@@ -576,12 +585,12 @@ textarea {
     /** ----------- */
 
     /** recommended Section */
-    .card>p{
+    .card>p {
         font-size: var(--fs-laptop-18);
     }
 
     .card>p:last-child,
-    .view>p{
+    .view>p {
         font-size: var(--fs-laptop-12);
     }
 
@@ -593,6 +602,40 @@ textarea {
 
     /** ----------- */
 
+    /** categories Section */
+    .category-slider button {
+        font-size: var(--fs-laptop-14);
+    }
+
+    .lesson>form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 20px;
+        row-gap: 25px;
+    }
+
+    .lesson button {
+        flex-direction: column;
+    }
+
+    .lesson img {
+        width: 100%;
+        max-width: none;
+        height: 125px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .lesson .content>p:first-child {
+        font-size: var(--fs-laptop-18);
+    }
+
+    .lesson .content>p:last-child {
+        font-size: var(--fs-laptop-12);
+    }
+
+    /** ----------- */
 }
 
 /** ----------- */
