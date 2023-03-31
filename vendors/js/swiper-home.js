@@ -19,6 +19,12 @@ const recommendedSwiper = new Swiper('.recommended-swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        1280: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+        },
+    }
 });
 
 const categorySliderSwiper = new Swiper('.category-slider-swiper', {

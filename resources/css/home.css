@@ -508,6 +508,13 @@ textarea {
 
 /** At 1280px Viewport */
 @media(min-width:1280px) {
+    /* ----------------------------------------------- */
+    /** || Reusable Styles */
+    /* ----------------------------------------------- */
+
+    h2 {
+        font-size: var(--fs-laptop-23);
+    }
 
     /** header */
     header>div {
@@ -560,12 +567,32 @@ textarea {
     /** ----------- */
 
     /** modal login, modal register & modal request */
-    .modal-login, 
+    .modal-login,
     .modal-register,
-    .modal-request{
+    .modal-request {
         width: 384px;
     }
+
     /** ----------- */
+
+    /** recommended Section */
+    .card>p{
+        font-size: var(--fs-laptop-18);
+    }
+
+    .card>p:last-child,
+    .view>p{
+        font-size: var(--fs-laptop-12);
+    }
+
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: block;
+    }
+
+    /** ----------- */
+
 }
 
 /** ----------- */
