@@ -48,6 +48,14 @@ h3 {
     margin-bottom: 20px;
 }
 
+.disabled-slider {
+    transform: translate3d(0px, 0, 0) !important;
+    -webkit-transform: translate3d(0px, 0, 0) !important;
+    -moz-transform: translate3d(0px, 0, 0) !important;
+    -ms-transform: translate3d(0px, 0, 0) !important;
+    -o-transform: translate3d(0px, 0, 0) !important;
+}
+
 /** header */
 header {
     display: flex;
@@ -292,9 +300,92 @@ iframe {
     /** || Reusable Styles */
     /* ----------------------------------------------- */
 
-    h2{
+    h1 {
+        font-size: var(--fs-laptop-20);
+    }
+
+    h2 {
         font-size: var(--fs-laptop-23);
     }
+
+    h3 {
+        font-size: var(--fs-laptop-23);
+    }
+
+    /** lesson Section */
+    .lesson {
+        flex-direction: row;
+    }
+
+    .lesson>div:first-child {
+        width: 80%;
+        margin-right: 30px;
+    }
+
+    .lesson>div:last-child {
+        width: 20%;
+    }
+
+    iframe {
+        height: 500px;
+    }
+
+    .views,
+    .data>p:first-child>span {
+        font-size: var(--fs-laptop-12);
+    }
+
+    .desc,
+    .total-comments,
+    .give-comment>form>div>button,
+    .data>p:first-child {
+        font-size: var(--fs-laptop-14);
+    }
+
+    .add-lesson-btn>button,
+    .give-comment>form>input {
+        font-size: var(--fs-laptop-16);
+    }
+
+    .give-comment>img,
+    .list-comment>div>img {
+        width: 35px;
+    }
+
+    .give-comment>form>div>button:first-child {
+        right: 90px;
+    }
+
+    .data>p:last-child {
+        font-size: var(--fs-laptop-15);
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        width: 100% !important;
+    }
+
+    .swiper-wrapper {
+        cursor: auto !important;
+        flex-direction: column;
+    }
+
+    .swiper-wrapper>button {
+        margin-bottom: 20px;
+    }
+
+    .swiper-wrapper>button:last-child {
+        margin-bottom: 0;
+    }
+
+    .card>p {
+        font-size: var(--fs-laptop-18);
+    }
+
+    .card>div>p {
+        font-size: var(--fs-laptop-12);
+    }
+
+    /** ----------- */
 }
 
 /** ----------- */

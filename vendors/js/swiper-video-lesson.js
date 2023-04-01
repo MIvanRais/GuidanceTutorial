@@ -19,4 +19,16 @@ const nextVideo = new Swiper('.next-video', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        1280: {
+            loop: false,
+        },
+    }
 });
+
+// **disabled slider of the next video slider
+const containerSlides = document.querySelector('.swiper-wrapper');
+
+if (window.innerWidth >= '1280') {
+    containerSlides.classList.add('disabled-slider');
+}
