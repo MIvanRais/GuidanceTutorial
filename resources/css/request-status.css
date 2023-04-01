@@ -116,6 +116,7 @@ a[href="index.html"]:hover {
 .message {
     font-size: var(--fs-small-11);
     margin-bottom: 6px;
+    line-height: 140%;
 }
 
 .content>p:last-child {
@@ -278,9 +279,38 @@ button[type="submit"]:hover {
     /** || Reusable Styles */
     /* ----------------------------------------------- */
 
-    h1{
+    h1 {
         font-size: var(--fs-laptop-23);
     }
+
+    /** list request Section */
+    .request-group {
+        width: 500px;
+        height: 400px;
+        overflow-y: scroll;
+    }
+
+    .request {
+        margin-bottom: 20px;
+    }
+
+    .topic>p:first-child {
+        font-size: var(--fs-laptop-16);
+    }
+
+    .topic>p:last-child {
+        font-size: var(--fs-laptop-10);
+    }
+
+    .message {
+        font-size: var(--fs-laptop-14);
+    }
+
+    .content>p:last-child {
+        font-size: var(--fs-laptop-12);
+    }
+
+    /** ----------- */
 }
 
 /** ----------- */
