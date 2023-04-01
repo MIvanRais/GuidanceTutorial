@@ -23,8 +23,7 @@ section {
 }
 
 /** headings */
-h1,
-h2 {
+h1 {
     font-weight: var(--fw-bold);
 }
 
@@ -89,37 +88,37 @@ a[href="index.html"]:hover {
 /** ----------- */
 
 /** list request Section */
-.content>*{
+.content>* {
     margin-left: 9px;
 }
 
-.list-request{
+.list-request {
     min-height: 100vh;
 }
 
-.topic{
+.topic {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 9px;
 }
 
-.topic>p:first-child{
+.topic>p:first-child {
     font-size: var(--fs-small-14);
 }
 
-.topic>p:last-child{
+.topic>p:last-child {
     color: var(--clr-btn-font);
     font-size: var(--fs-small-7);
     font-weight: var(--fw-bold);
 }
 
-.message{
+.message {
     font-size: var(--fs-small-11);
     margin-bottom: 6px;
 }
 
-.content>p:last-child{
+.content>p:last-child {
     font-size: var(--fs-small-10);
     color: var(--clr-new);
     font-weight: var(--fw-regular);
@@ -144,17 +143,18 @@ a[href="index.html"]:hover {
     border-radius: 5px;
 }
 
-.border-status-respond{
+.border-status-respond {
     border-left: 3px solid var(--clr-respond);
 }
 
-.border-status-decline{
+.border-status-decline {
     border-left: 3px solid var(--clr-decline);
 }
 
-.border-status-new{
+.border-status-new {
     border-left: 3px solid var(--clr-new);
 }
+
 /** ----------- */
 
 /** footer */
@@ -268,6 +268,19 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--clr-secondary);
+}
+
+/** ----------- */
+
+/** At 1280px Viewport */
+@media(min-width:1280px) {
+    /* ----------------------------------------------- */
+    /** || Reusable Styles */
+    /* ----------------------------------------------- */
+
+    h1{
+        font-size: var(--fs-laptop-23);
+    }
 }
 
 /** ----------- */
