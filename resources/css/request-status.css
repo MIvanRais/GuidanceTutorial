@@ -311,6 +311,13 @@ button[type="submit"]:hover {
     }
 
     /** ----------- */
+
+    /** footer */
+    footer>p:first-child {
+        width: 500px;
+    }
+
+    /** ----------- */
 }
 
 /** ----------- */
