@@ -33,11 +33,11 @@ h3 {
     font-weight: var(--fw-bold);
 }
 
-h1 {
+h2 {
     font-size: var(--fs-small-20);
 }
 
-h2 {
+h1 {
     font-size: var(--fs-small-18);
     margin-top: 20px;
     margin-bottom: 5px;
@@ -282,6 +282,19 @@ iframe {
 .swiper-pagination {
     position: absolute;
     bottom: 0 !important;
+}
+
+/** ----------- */
+
+/** At 1280px Viewport */
+@media(min-width:1280px) {
+    /* ----------------------------------------------- */
+    /** || Reusable Styles */
+    /* ----------------------------------------------- */
+
+    h2{
+        font-size: var(--fs-laptop-23);
+    }
 }
 
 /** ----------- */
