@@ -23,17 +23,9 @@ section {
 }
 
 /** headings */
-h1,
-h2 {
-    font-weight: var(--fw-bold);
-}
-
 h1 {
+    font-weight: var(--fw-bold);
     font-size: var(--fs-small-20);
-}
-
-h2 {
-    font-size: var(--fs-small-16);
 }
 
 /** header */
@@ -163,7 +155,21 @@ img {
     -o-transition: background-color .2s ease-in;
 }
 
-.my-profile>div:last-child button:hover{
+.my-profile>div:last-child button:hover {
     background-color: var(--clr-secondary);
 }
+
+/** ----------- */
+
+/** At 1280px Viewport */
+@media(min-width:1280px) {
+    /* ----------------------------------------------- */
+    /** || Reusable Styles */
+    /* ----------------------------------------------- */
+
+    h1{
+        font-size: var(--fs-laptop-23);
+    }
+}
+
 /** ----------- */
