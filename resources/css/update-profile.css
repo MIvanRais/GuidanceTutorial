@@ -52,14 +52,14 @@ img {
 /** ----------- */
 
 /** update profile Section */
-form>div:first-child>div,
-form>div {
+form>div>div:first-child>div,
+form>div>div {
     display: flex;
     flex-direction: column;
 }
 
-form>div>div:first-child,
-form>div {
+form>div>div:first-child>div:first-child,
+form>div>div {
     margin-bottom: 20px;
 }
 
@@ -143,15 +143,52 @@ button:hover {
     /** || Reusable Styles */
     /* ----------------------------------------------- */
 
-    h1{
+    h1 {
         font-size: var(--fs-laptop-18);
     }
 
     /** header */
-    img{
+    img {
         width: 55px;
     }
+
     /** ----------- */
+
+    /** update profile Section */
+    form {
+        width: 550px;
+    }
+
+    form>div>div:first-child {
+        display: flex;
+        flex-direction: row;
+    }
+
+    form>div>div:first-child>div {
+        width: 50%;
+    }
+
+    form>div>div:first-child>div:first-child {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    input,
+    label[for="male"],
+    label[for="female"] {
+        font-size: var(--fs-laptop-16);
+    }
+
+    .photo-profile-field>p {
+        font-size: var(--fs-laptop-12);
+    }
+
+    button {
+        font-size: var(--fs-laptop-16);
+    }
+
+    /** ----------- */
+
 }
 
 /** ----------- */
