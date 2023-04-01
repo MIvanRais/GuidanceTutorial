@@ -635,6 +635,10 @@ textarea {
         font-size: var(--fs-laptop-12);
     }
 
+    .swiper-wrapper {
+        cursor: auto !important;
+    }
+
     /** ----------- */
 
     /** footer */
