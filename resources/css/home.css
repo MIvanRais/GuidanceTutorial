@@ -718,3 +718,22 @@ textarea {
 }
 
 /** ----------- */
+
+/** At 1600px Viewport */
+@media(min-width:1600px) {
+
+    /** hero-text-box Section */
+    .hero-text-box>div>div {
+        width: 70%;
+    }
+
+    .hero-text-box>div>div>h1 {
+        width: 450px;
+    }
+
+    .hero-text-box>div>div>p {
+        width: 500px;
+    }
+
+    /** ----------- */
+}
