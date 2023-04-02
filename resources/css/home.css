@@ -71,6 +71,17 @@ dialog::backdrop {
     -o-transform: translate3d(0px, 0, 0) !important;
 }
 
+.photo-profile {
+    width: 30px;
+    clip-path: circle();
+}
+
+.fullname {
+    font-size: var(--fs-small-12);
+    font-weight: var(--fw-bold);
+    margin-right: 15px;
+}
+
 /** modal burger menu */
 .modal-menu {
     width: 100%;
@@ -515,6 +526,20 @@ textarea {
 
 /** ----------- */
 
+/** At 0px Viewport */
+@media(min-width:0px) {
+
+    /** header */
+    header>div {
+        display: flex;
+        align-items: center;
+    }
+
+    /** ----------- */
+}
+
+/** ----------- */
+
 /** At 1280px Viewport */
 @media(min-width:1280px) {
     /* ----------------------------------------------- */
@@ -642,9 +667,10 @@ textarea {
     /** ----------- */
 
     /** footer */
-    footer>p:first-child{
+    footer>p:first-child {
         width: 500px;
     }
+
     /** ----------- */
 }
 
