@@ -396,3 +396,24 @@ iframe {
 }
 
 /** ----------- */
+
+/** At 1600px Viewport */
+@media(min-width:1600px) {
+
+    /** lesson Section */
+    iframe {
+        height: 700px;
+    }
+
+    .lesson>div:first-child {
+        width: 85%;
+    }
+
+    .lesson>div:last-child {
+        width: 15%;
+    }
+
+    /** ----------- */
+}
+
+/** ----------- */
