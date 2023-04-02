@@ -736,6 +736,13 @@ textarea {
     }
 
     /** ----------- */
+
+    /** categories Section */
+    .lesson>form {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    /** ----------- */
 }
 
 /** ----------- */
