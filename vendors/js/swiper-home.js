@@ -3,7 +3,7 @@ const recommendedSwiper = new Swiper('.recommended-swiper', {
     slidesPerView: 1.4,
     spaceBetween: 15,
     slidesPerGroup: 1,
-    loop: true,
+    loop: false,
     centerSlide: 'true',
     loopFillGroupWithBlank: false,
     grabCursor: 'true',
