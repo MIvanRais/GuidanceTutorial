@@ -26,6 +26,9 @@
 
     --clr-font: hsla(238, 22%, 24%, 1);
 
+    --menu-drop-down: linear-gradient(180deg, rgba(48, 49, 75, 0.85) 0%, #30314B 100%);
+
+
     --ff-headline: 'Permanent Marker', cursive;
     --ff-general: 'Open Sans', sans-serif;
 

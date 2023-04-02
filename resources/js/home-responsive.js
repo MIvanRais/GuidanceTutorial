@@ -4,30 +4,6 @@ const maxWidth1279 = window.matchMedia('(max-width:1279px)');
 // ** --At min width 1280px Viewport--
 const minWidth1280 = window.matchMedia('(min-width:1280px)');
 
-// ** -already have account-
-const haveAccount = document.querySelector('header>div');
-
-// ** create elements (p and img)
-const photoProfile = document.createElement('img');
-photoProfile.setAttribute('src', 'resources/images/PP-Male.jpg')
-photoProfile.setAttribute('alt', 'Photo Profile');
-photoProfile.classList.add('photo-profile');
-
-const fullname = document.createElement('p');
-fullname.append("Mochammad Ivan Ra'is");
-fullname.classList.add('fullname');
-
-function haveAccount0Px(widthViewport) {
-    if (widthViewport.matches) {
-        loginBtn.remove();
-        haveAccount.insertAdjacentElement('afterbegin', photoProfile);
-        haveAccount.insertAdjacentElement('afterbegin', fullname);
-    }
-}
-
-haveAccount0Px(maxWidth1279);
-// ** -----------
-
 // ** manipulate header 
 function removeBurgerMenu(widthViewport) {
     if (widthViewport.matches) {
@@ -112,4 +88,88 @@ function removeHrs(widthViewport) {
 }
 
 removeHrs(minWidth1280); //** Call function at run time
+// ** -----------
+
+// ** -already login-
+const alreadyLogin = document.querySelector('header>div');
+
+// ** create img element (photo profile)
+const photoProfile = document.createElement('img');
+photoProfile.setAttribute('src', 'resources/images/PP-Male.jpg')
+photoProfile.setAttribute('alt', 'Photo Profile');
+photoProfile.classList.add('photo-profile');
+
+// ** create p element (fullname)
+const fullname = document.createElement('p');
+fullname.append("Mochammad Ivan Ra'is");
+fullname.classList.add('fullname');
+
+// **create svg element (expand more icon)
+const xmlnsExpandMore = 'http://www.w3.org/2000/svg';
+const boxWidthExpandMore = '24';
+const boxHeightExpandMore = '15';
+
+const expandMore = document.createElementNS(xmlnsExpandMore, 'svg');
+expandMore.setAttributeNS(null, 'viewbox', `0 0 ${boxWidthExpandMore} ${boxHeightExpandMore}`);
+expandMore.setAttributeNS(null, 'width', boxWidthExpandMore);
+expandMore.setAttributeNS(null, 'height', boxHeightExpandMore);
+expandMore.setAttribute('class', 'expand');
+
+const expandMorePath = document.createElementNS(xmlnsExpandMore, 'path');
+expandMorePath.setAttributeNS(null, 'd', 'M12 14.15L0 2.15L2.15 0L12 9.9L21.85 0.0499992L24 2.2L12 14.15Z');
+expandMorePath.setAttributeNS(null, 'fill', '#30314B');
+
+expandMore.appendChild(expandMorePath);
+
+function removeLoginButton(widthViewport) {
+    if (widthViewport.matches) {
+        loginBtn.remove();
+        alreadyLogin.insertAdjacentElement('afterbegin', photoProfile);
+        alreadyLogin.insertAdjacentElement('afterbegin', fullname);
+    } else {
+        loginBtn.style.display = 'none';
+        document.querySelector('header>div>svg').style.display = 'none';
+        alreadyLogin.insertAdjacentElement('beforeend', photoProfile);
+        alreadyLogin.insertAdjacentElement('beforeend', fullname);
+        alreadyLogin.insertAdjacentElement('beforeend', expandMore);
+    }
+}
+
+removeLoginButton(maxWidth1279);  //** Call function at run time
+// ** -----------
+
+// ** show the menu drop down
+const menuDropDown = document.querySelector('#menu-drop-down');
+
+// **create svg element (expand less icon)
+const xmlnsExpandLess = 'http://www.w3.org/2000/svg';
+const boxWidthExpandLess = '24';
+const boxHeightExpandLess = '15';
+
+const expandLess = document.createElementNS(xmlnsExpandLess, 'svg');
+expandLess.setAttributeNS(null, 'viewbox', `0 0 ${boxWidthExpandLess} ${boxHeightExpandLess}`);
+expandLess.setAttributeNS(null, 'width', boxWidthExpandLess);
+expandLess.setAttributeNS(null, 'height', boxHeightExpandLess);
+expandLess.setAttribute('class', 'expand');
+
+const expandLessPath = document.createElementNS(xmlnsExpandLess, 'path');
+expandLessPath.setAttributeNS(null, 'd', 'M2.15 14.15L0 12L12 0L24 11.95L21.85 14.1L12 4.25L2.15 14.15Z');
+expandLessPath.setAttributeNS(null, 'fill', '#30314B');
+
+expandLess.appendChild(expandLessPath);
+
+expandMore.addEventListener('click', () => {
+    expandMore.style.display = 'none';
+    menuDropDown.style.display = 'flex';
+    expandLess.style.display = 'block';
+    alreadyLogin.insertAdjacentElement('beforeend', expandLess);
+})
+
+expandLess.addEventListener('click', () => {
+    menuDropDown.style.display = 'none';
+    expandLess.style.display = 'none';
+    expandMore.style.display = 'block';
+    alreadyLogin.insertAdjacentElement('beforeend', expandMore);
+})
+
 // ** -----------

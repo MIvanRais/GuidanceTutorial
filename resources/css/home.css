@@ -82,6 +82,11 @@ dialog::backdrop {
     margin-right: 15px;
 }
 
+.expand {
+    cursor: pointer;
+    margin-right: 0;
+}
+
 /** modal burger menu */
 .modal-menu {
     width: 100%;
@@ -239,6 +244,40 @@ button[type="submit"]:hover {
 .modal-login>p>span:hover,
 .modal-register>p>span:hover {
     color: var(--clr-font);
+}
+
+/** ----------- */
+
+/** menu-drop-down Section */
+
+.menu-drop-down {
+    margin-bottom: 0;
+    background: var(--menu-drop-down);
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.menu-drop-down * {
+    color: var(--clr-primary);
+    font-size: var(--fs-laptop-16);
+}
+
+.menu-drop-down>div>a:link,
+.menu-drop-down>div>a:visited {
+    text-decoration: none;
+}
+
+.menu-drop-down>form>button {
+    background-color: transparent;
+    border: none;
 }
 
 /** ----------- */
@@ -548,6 +587,10 @@ textarea {
 
     h2 {
         font-size: var(--fs-laptop-23);
+    }
+
+    .fullname {
+        font-size: var(--fs-laptop-16);
     }
 
     /** header */
