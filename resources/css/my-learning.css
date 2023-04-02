@@ -314,6 +314,13 @@ button[type="submit"]:hover {
         font-size: var(--fs-laptop-23);
     }
 
+    /** header */
+    header>p {
+        font-size: var(--fs-laptop-14);
+    }
+
+    /** ----------- */
+
     /** categories Section */
     .category-slider button {
         font-size: var(--fs-laptop-14);

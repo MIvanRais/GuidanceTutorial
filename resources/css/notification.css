@@ -255,6 +255,13 @@ button[type="submit"]:hover {
         font-size: var(--fs-laptop-23);
     }
 
+    /** header */
+    header>p {
+        font-size: var(--fs-laptop-14);
+    }
+
+    /** ----------- */
+
     /** list-notification Section */
     .list-notification-group {
         width: 400px;

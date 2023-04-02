@@ -178,6 +178,13 @@ img {
         font-size: var(--fs-laptop-23);
     }
 
+    /** header */
+    header>p {
+        font-size: var(--fs-laptop-14);
+    }
+
+    /** ----------- */
+
     /** my profile Section */
     img {
         width: 55px;
