@@ -376,3 +376,16 @@ button[type="submit"]:hover {
 }
 
 /** ----------- */
+
+/** At 1600px Viewport */
+@media(min-width:1600px) {
+
+    /** categories Section */
+    .lesson>form {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    /** ----------- */
+}
+
+/** ----------- */
