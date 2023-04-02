@@ -24,6 +24,10 @@ const recommendedSwiper = new Swiper('.recommended-swiper', {
             slidesPerView: 5,
             slidesPerGroup: 5,
         },
+        1600: {
+            slidesPerView: 6,
+            slidesPerGroup: 6,
+        },
     }
 });
 
