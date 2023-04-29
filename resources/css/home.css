@@ -308,6 +308,11 @@ header {
     align-items: center;
 }
 
+header>div {
+    display: flex;
+    align-items: center;
+}
+
 header>button {
     background-color: transparent;
     border: none;
@@ -582,18 +587,6 @@ textarea {
 }
 
 /** ----------- */
-
-/** At 0px Viewport */
-@media(min-width:0px) {
-
-    /** header */
-    header>div {
-        display: flex;
-        align-items: center;
-    }
-
-    /** ----------- */
-}
 
 /** ----------- */
 
