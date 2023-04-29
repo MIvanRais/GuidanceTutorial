@@ -1,5 +1,5 @@
-// ** --At 1200px Viewport--
-const minWidth1200 = window.matchMedia('(min-width:1200px)');
+// ** --At 992px Viewport--
+const minWidth992 = window.matchMedia('(min-width:992px)');
 
 // ** remove pagination, swiper button prev and next
 const pagination = document.querySelector('.swiper-pagination');
@@ -15,4 +15,4 @@ function removeElements(widthViewport) {
     }
 }
 
-removeElements(minWidth1200); //** Call function at run time
+removeElements(minWidth992); //** Call function at run time

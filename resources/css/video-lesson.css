@@ -317,6 +317,90 @@ iframe {
     /** ----------- */
 }
 
+/** ----------- */
+
+/** At 992px Viewport */
+@media(min-width:992px) {
+
+    /** lesson Section */
+    .lesson {
+        flex-direction: row;
+    }
+
+    .lesson>div:first-child {
+        width: 75%;
+        margin-right: 30px;
+    }
+
+    .lesson>div:last-child {
+        width: 25%;
+    }
+
+    .views,
+    .data>p:first-child>span {
+        font-size: var(--fs-laptop-12);
+    }
+
+    .desc,
+    .total-comments,
+    .give-comment>form>div>button,
+    .data>p:first-child {
+        font-size: var(--fs-laptop-14);
+    }
+
+    .add-lesson-btn>button,
+    .give-comment>form>input {
+        font-size: var(--fs-laptop-16);
+    }
+
+    .give-comment>img,
+    .list-comment>div>img {
+        width: 35px;
+    }
+
+    .give-comment>form>div>button:first-child {
+        right: 90px;
+    }
+
+    .data>p:last-child {
+        font-size: var(--fs-laptop-15);
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        width: 100% !important;
+    }
+
+    .swiper-wrapper {
+        cursor: auto !important;
+        flex-direction: column;
+    }
+
+    .swiper-wrapper>button {
+        margin-bottom: 20px;
+    }
+
+    .swiper-wrapper>button:last-child {
+        margin-bottom: 0;
+    }
+
+    .card>p {
+        font-size: var(--fs-laptop-18);
+    }
+
+    .card>div>p {
+        font-size: var(--fs-laptop-12);
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: none;
+    }
+
+    /** ----------- */
+}
+
+/** ----------- */
+
 /** At 1200px Viewport */
 @media(min-width:1200px) {
     /* ----------------------------------------------- */

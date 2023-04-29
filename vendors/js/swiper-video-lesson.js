@@ -24,7 +24,7 @@ const nextVideo = new Swiper('.next-video', {
             slidesPerView: 3,
             slidesPerGroup: 3
         },
-        1200: {
+        992: {
             loop: false,
         },
     }
@@ -33,6 +33,6 @@ const nextVideo = new Swiper('.next-video', {
 // **disabled slider of the next video slider
 const containerSlides = document.querySelector('.swiper-wrapper');
 
-if (window.innerWidth >= '1200') {
+if (window.innerWidth >= '992') {
     containerSlides.classList.add('disabled-slider');
 }
