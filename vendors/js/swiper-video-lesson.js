@@ -20,7 +20,11 @@ const nextVideo = new Swiper('.next-video', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        1280: {
+        768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3
+        },
+        1200: {
             loop: false,
         },
     }
@@ -29,6 +33,6 @@ const nextVideo = new Swiper('.next-video', {
 // **disabled slider of the next video slider
 const containerSlides = document.querySelector('.swiper-wrapper');
 
-if (window.innerWidth >= '1280') {
+if (window.innerWidth >= '1200') {
     containerSlides.classList.add('disabled-slider');
 }

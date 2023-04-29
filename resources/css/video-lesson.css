@@ -294,8 +294,31 @@ iframe {
 
 /** ----------- */
 
-/** At 1280px Viewport */
-@media(min-width:1280px) {
+/** At 768px Viewport */
+@media(min-width:768px) {
+
+    /** header */
+    header>p {
+        font-size: var(--fs-laptop-14);
+    }
+
+    /* ******** */
+
+    /** lesson Section */
+    iframe {
+        height: 400px;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: block;
+    }
+
+    /** ----------- */
+}
+
+/** At 1200px Viewport */
+@media(min-width:1200px) {
     /* ----------------------------------------------- */
     /** || Reusable Styles */
     /* ----------------------------------------------- */
@@ -311,13 +334,6 @@ iframe {
     h3 {
         font-size: var(--fs-laptop-23);
     }
-
-    /** header */
-    header>p {
-        font-size: var(--fs-laptop-14);
-    }
-
-    /** ----------- 
 
     /** lesson Section */
     .lesson {
