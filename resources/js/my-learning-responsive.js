@@ -1,5 +1,5 @@
-// ** --At 1280px Viewport--
-const minWidth1280 = window.matchMedia('(min-width:1280px)');
+// ** --At 768px Viewport--
+const minWidth768 = window.matchMedia('(min-width:768px)');
 
 // ** remove hr elements inside lesson 
 const hrs = document.querySelectorAll('.lesson>form>hr');
@@ -12,5 +12,5 @@ function removeHrs(widthViewport) {
     }
 }
 
-removeHrs(minWidth1280); //** Call function at run time
+removeHrs(minWidth768); //** Call function at run time
 // ** -----------
