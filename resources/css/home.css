@@ -700,7 +700,23 @@ textarea {
 /** ----------- */
 
 /** At 992px Viewport */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    /** hero-text-box Section */
+    .lesson>form {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /** ----------- */
+
+    /** footer */
+    footer>p:first-child {
+        width: 500px;
+    }
+
+    /** ----------- */
+
+}
 
 /** ----------- */
 
@@ -809,12 +825,7 @@ textarea {
 
     /** ----------- */
 
-    /** footer */
-    footer>p:first-child {
-        width: 500px;
-    }
 
-    /** ----------- */
 }
 
 /** ----------- */
