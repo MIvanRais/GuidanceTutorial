@@ -608,6 +608,25 @@ textarea {
     }
 
     /** ----------- */
+
+    /** hero-text-box Section */
+    .hero-text-box>div {
+        display: flex;
+    }
+
+    .hero-text-box>div>img {
+        order: 2;
+        width: 350px;
+    }
+
+    .hero-text-box>div>div {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /** ----------- */
 }
 
 /** ----------- */
@@ -629,7 +648,7 @@ textarea {
 
 
     /** hero-text-box Section */
-    .hero-text-box>div {
+    /* .hero-text-box>div {
         display: flex;
     }
 
@@ -652,7 +671,7 @@ textarea {
 
     .hero-text-box>div>div>p {
         width: 60%;
-    }
+    } */
 
     /** ----------- */
 
