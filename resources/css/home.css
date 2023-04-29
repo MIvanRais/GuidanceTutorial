@@ -636,8 +636,45 @@ textarea {
 
     /** ----------- */
 
+    /* * categories Section */
+    .category-slider button {
+        font-size: var(--fs-laptop-14);
+    }
 
+    .lesson>form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 20px;
+        row-gap: 25px;
+    }
 
+    .lesson button {
+        flex-direction: column;
+    }
+
+    .lesson img {
+        width: 100%;
+        max-width: none;
+        height: 125px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .swiper-wrapper {
+        cursor: auto !important;
+    }
+
+    /** ----------- */
+
+    /** modal login, modal register & modal request */
+    .modal-login,
+    .modal-register,
+    .modal-request {
+        width: 384px;
+    }
+
+    /** ----------- */
 }
 
 /** ----------- */
@@ -687,11 +724,11 @@ textarea {
     /** ----------- */
 
     /** modal login, modal register & modal request */
-    .modal-login,
+    /* .modal-login,
     .modal-register,
     .modal-request {
         width: 384px;
-    }
+    } */
 
     /** ----------- */
 

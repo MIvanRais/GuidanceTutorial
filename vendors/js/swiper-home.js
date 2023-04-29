@@ -49,6 +49,6 @@ const categorySliderSwiper = new Swiper('.category-slider-swiper', {
 // **disabled slider of the category slider 
 const containerSlides = document.querySelector('.category-slider .swiper-wrapper');
 
-if (window.innerWidth >= '1280') {
+if (window.innerWidth >= '768') {
     containerSlides.classList.add('disabled-slider');
 }
