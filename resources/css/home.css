@@ -267,7 +267,7 @@ button[type="submit"]:hover {
 
 .menu-drop-down * {
     color: var(--clr-primary);
-    font-size: var(--fs-laptop-16);
+    font-size: var(--fs-laptop-14);
 }
 
 .menu-drop-down>div>a:link,
@@ -579,19 +579,8 @@ textarea {
 
 /** ----------- */
 
-/** At 1280px Viewport */
-@media(min-width:1280px) {
-    /* ----------------------------------------------- */
-    /** || Reusable Styles */
-    /* ----------------------------------------------- */
-
-    h2 {
-        font-size: var(--fs-laptop-23);
-    }
-
-    .fullname {
-        font-size: var(--fs-laptop-16);
-    }
+/** At 768px Viewport */
+@media (min-width: 768px) {
 
     /** header */
     header>div {
@@ -601,6 +590,7 @@ textarea {
     }
 
     header>div>* {
+        font-size: var(--fs-laptop-14);
         margin-right: 15px;
     }
 
@@ -613,7 +603,30 @@ textarea {
         font-size: var(--fs-laptop-16);
     }
 
+    .fullname {
+        font-size: var(--fs-laptop-14);
+    }
+
     /** ----------- */
+}
+
+/** ----------- */
+
+/** At 992px Viewport */
+@media (min-width: 992px) {}
+
+/** ----------- */
+
+/** At 1200px Viewport */
+@media(min-width:1200px) {
+    /* ----------------------------------------------- */
+    /** || Reusable Styles */
+    /* ----------------------------------------------- */
+
+    h2 {
+        font-size: var(--fs-laptop-23);
+    }
+
 
     /** hero-text-box Section */
     .hero-text-box>div {

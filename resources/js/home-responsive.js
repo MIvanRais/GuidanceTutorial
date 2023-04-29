@@ -1,23 +1,10 @@
-// ** --At max width 1279px Viewport--
-const maxWidth1279 = window.matchMedia('(max-width:1279px)');
+// **Create Elements //
 
-// ** --At min width 1280px Viewport--
-const minWidth1280 = window.matchMedia('(min-width:1280px)');
-
-// ** manipulate header 
-function removeBurgerMenu(widthViewport) {
-    if (widthViewport.matches) {
-        header.removeChild(document.querySelector('header>button'));
-    }
-}
-
-removeBurgerMenu(minWidth1280); //** Call function at run time
-
-// ** create h2 (GuidanceTutorial) element
+// **create h2 (GuidanceTutorial) element
 const h2 = document.createElement('h2');
 h2.append('GuidanceTutorial');
 
-// ** create link (My Learning) element
+// **create link (My Learning) element
 const myLearningLink = document.createElement('a');
 myLearningLink.setAttribute('href', 'my-learning.html');
 
@@ -26,7 +13,7 @@ myLearning.append('My Learning');
 
 myLearningLink.appendChild(myLearning);
 
-// ** create svg (notification icon) element
+// **create svg (notification icon) element
 const notificationLink = document.createElement('a');
 notificationLink.setAttribute('href', 'notification.html');
 
@@ -46,7 +33,7 @@ notificationPath.setAttributeNS(null, 'fill', '#808080');
 notification.appendChild(notificationPath);
 notificationLink.appendChild(notification);
 
-// ** create svg (avatar icon) element
+// **create svg (avatar icon) element
 const xmlnsAvatar = 'http://www.w3.org/2000/svg';
 const boxWidthAvatar = '31';
 const boxHeightAvatar = '30';
@@ -61,37 +48,6 @@ avatarPath.setAttributeNS(null, 'd', 'M5.81005 23.4375C7.38505 22.3375 8.94755 2
 avatarPath.setAttributeNS(null, 'fill', '#30314B');
 
 avatar.appendChild(avatarPath);
-
-// ** insert all elements inside the header element
-
-function addElements(widthViewport) {
-    if (widthViewport.matches) {
-        header.insertAdjacentElement('afterbegin', h2);
-        h2.style.marginBottom = '0px';
-        loginBtn.insertAdjacentElement('beforebegin', myLearningLink);
-        loginBtn.insertAdjacentElement('beforebegin', notificationLink);
-        loginBtn.insertAdjacentElement('beforebegin', avatar);
-    }
-}
-
-addElements(minWidth1280); //** Call function at run time
-
-// ** remove hr elements inside lesson 
-const hrs = document.querySelectorAll('.lesson>form>hr');
-
-function removeHrs(widthViewport) {
-    if (widthViewport.matches) {
-        for (const hr of hrs) {
-            hr.remove();
-        }
-    }
-}
-
-removeHrs(minWidth1280); //** Call function at run time
-// ** -----------
-
-// ** -already login-
-const alreadyLogin = document.querySelector('header>div');
 
 // ** create img element (photo profile)
 const photoProfile = document.createElement('img');
@@ -121,26 +77,6 @@ expandMorePath.setAttributeNS(null, 'fill', '#30314B');
 
 expandMore.appendChild(expandMorePath);
 
-function removeLoginButton(widthViewport) {
-    if (widthViewport.matches) {
-        loginBtn.remove();
-        alreadyLogin.insertAdjacentElement('afterbegin', photoProfile);
-        alreadyLogin.insertAdjacentElement('afterbegin', fullname);
-    } else {
-        loginBtn.style.display = 'none';
-        document.querySelector('header>div>svg').style.display = 'none';
-        alreadyLogin.insertAdjacentElement('beforeend', photoProfile);
-        alreadyLogin.insertAdjacentElement('beforeend', fullname);
-        alreadyLogin.insertAdjacentElement('beforeend', expandMore);
-    }
-}
-
-removeLoginButton(maxWidth1279);  //** Call function at run time
-// ** -----------
-
-// ** show the menu drop down
-const menuDropDown = document.querySelector('#menu-drop-down');
-
 // **create svg element (expand less icon)
 const xmlnsExpandLess = 'http://www.w3.org/2000/svg';
 const boxWidthExpandLess = '24';
@@ -157,6 +93,66 @@ expandLessPath.setAttributeNS(null, 'd', 'M2.15 14.15L0 12L12 0L24 11.95L21.85 1
 expandLessPath.setAttributeNS(null, 'fill', '#30314B');
 
 expandLess.appendChild(expandLessPath);
+
+// **------------------------------------------------//
+
+// ** Insert All Elements Inside The Header Element//
+
+// ** --At min width 768px Viewport--
+const minWidth768 = window.matchMedia('(min-width:768px)');
+
+function addElements(widthViewport) {
+    if (widthViewport.matches) {
+        header.removeChild(document.querySelector('header>button'));
+        header.insertAdjacentElement('afterbegin', h2);
+        h2.style.marginBottom = '0px';
+        loginBtn.insertAdjacentElement('beforebegin', myLearningLink);
+        loginBtn.insertAdjacentElement('beforebegin', notificationLink);
+        loginBtn.insertAdjacentElement('beforebegin', avatar);
+    }
+}
+
+addElements(minWidth768); //** Call function at run time
+
+// **------------------------------------------------//
+
+// ** Already Login//
+const alreadyLogin = document.querySelector('header>div');
+
+function removeLoginButton(widthViewport) {
+    if (widthViewport.matches) {
+        loginBtn.remove();
+        avatar.remove();
+        alreadyLogin.appendChild(photoProfile);
+        alreadyLogin.appendChild(fullname);
+        alreadyLogin.appendChild(expandMore);
+    } else {
+        loginBtn.remove();
+        alreadyLogin.appendChild(fullname);
+        alreadyLogin.appendChild(photoProfile);
+    }
+}
+
+removeLoginButton(minWidth768);  //** Call function at run time
+// ** -----------
+
+// **Remove hr Elements Inside Lesson//
+
+const hrs = document.querySelectorAll('.lesson>form>hr');
+
+function removeHrs(widthViewport) {
+    if (widthViewport.matches) {
+        for (const hr of hrs) {
+            hr.remove();
+        }
+    }
+}
+
+removeHrs(minWidth768); //** Call function at run time
+// ** -----------
+
+// ** Show The Menu Drop Down//
+const menuDropDown = document.querySelector('#menu-drop-down');
 
 expandMore.addEventListener('click', () => {
     expandMore.style.display = 'none';
