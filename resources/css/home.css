@@ -1,6 +1,10 @@
 /* ----------------------------------------------- */
 /** || Reusable Styles */
 /* ----------------------------------------------- */
+:root {
+    accent-color: var(--clr-secondary);
+}
+
 * {
     box-sizing: border-box;
     color: var(--clr-font);
@@ -151,7 +155,7 @@ nav>a {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 22px;
 }
 
 .modal-login>div:first-child,
@@ -174,19 +178,24 @@ nav>a {
     cursor: pointer;
 }
 
-.username-group,
-.password-group,
-.email-group {
+.modal-register>form>div,
+.modal-login>form>div,
+.modal-register>form>div>div {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
 
-label[for="username"],
-label[for="password"],
-label[for="email"] {
+.modal-register>form>div>label,
+.modal-login>form>div>label,
+.modal-register>form>div>div>label,
+.gender-field>p {
     margin-bottom: 5px;
     font-size: var(--fs-small-14);
+}
+
+.fullname-group>div:last-child {
+    margin-bottom: 0;
 }
 
 input,
@@ -200,6 +209,15 @@ textarea {
     padding: 5px;
     background-color: transparent;
     border: 1.7px solid var(--clr-border);
+}
+
+
+.gender-field>div {
+    flex-direction: row !important;
+}
+
+.gender-field>div>div:first-child {
+    margin-right: 15px;
 }
 
 button[type="submit"] {
