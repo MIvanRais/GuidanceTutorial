@@ -20,6 +20,10 @@ const recommendedSwiper = new Swiper('.recommended-swiper', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
+        768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+        },
         1280: {
             slidesPerView: 5,
             slidesPerGroup: 5,

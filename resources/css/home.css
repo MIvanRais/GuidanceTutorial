@@ -627,6 +627,17 @@ textarea {
     }
 
     /** ----------- */
+
+    /** recommended Section */
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: block;
+    }
+
+    /** ----------- */
+
+
+
 }
 
 /** ----------- */
@@ -695,15 +706,15 @@ textarea {
     }
 
 
-    .swiper-button-next:after,
+    /* .swiper-button-next:after,
     .swiper-button-prev:after {
         display: block;
-    }
+    } */
 
     /** ----------- */
 
-    /** categories Section */
-    .category-slider button {
+    /* * categories Section */
+    /* .category-slider button {
         font-size: var(--fs-laptop-14);
     }
 
@@ -737,7 +748,7 @@ textarea {
 
     .swiper-wrapper {
         cursor: auto !important;
-    }
+    } */
 
     /** ----------- */
 
