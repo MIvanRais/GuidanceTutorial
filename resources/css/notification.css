@@ -172,7 +172,7 @@ footer>p:last-child {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 22px;
 }
 
 .modal-request>div:first-child>svg {
@@ -245,15 +245,8 @@ button[type="submit"]:hover {
 
 /** ----------- */
 
-/** At 1280px Viewport */
-@media(min-width:1280px) {
-    /* ----------------------------------------------- */
-    /** || Reusable Styles */
-    /* ----------------------------------------------- */
-
-    h1 {
-        font-size: var(--fs-laptop-23);
-    }
+/** At 768px Viewport */
+@media(min-width:768px) {
 
     /** header */
     header>p {
@@ -283,17 +276,30 @@ button[type="submit"]:hover {
 
     /** ----------- */
 
+    /** modal request */
+    .modal-request {
+        width: 400px;
+    }
+
+    /** ----------- */
+}
+
+/** ----------- */
+
+/** At 1280px Viewport */
+@media(min-width:1200px) {
+    /* ----------------------------------------------- */
+    /** || Reusable Styles */
+    /* ----------------------------------------------- */
+
+    h1 {
+        font-size: var(--fs-laptop-23);
+    }
+
     /** footer */
 
     footer>p:first-child {
         width: 500px;
-    }
-
-    /** ----------- */
-
-    /** modal request */
-    .modal-request {
-        width: 384px;
     }
 
     /** ----------- */
