@@ -286,6 +286,19 @@ button[type="submit"]:hover {
 
 /** ----------- */
 
+/** At 992px Viewport */
+@media(min-width:992px) {
+    /** footer */
+
+    footer>p:first-child {
+        width: 500px;
+    }
+
+    /** ----------- */
+}
+
+/** ----------- */
+
 /** At 1280px Viewport */
 @media(min-width:1200px) {
     /* ----------------------------------------------- */
@@ -296,13 +309,7 @@ button[type="submit"]:hover {
         font-size: var(--fs-laptop-23);
     }
 
-    /** footer */
 
-    footer>p:first-child {
-        width: 500px;
-    }
-
-    /** ----------- */
 }
 
 /** ----------- */
