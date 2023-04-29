@@ -311,15 +311,10 @@ button[type="submit"]:hover {
     /** ----------- */
 }
 
-/** At 1280px Viewport */
-@media(min-width:1200px) {
-    /* ----------------------------------------------- */
-    /** || Reusable Styles */
-    /* ----------------------------------------------- */
+/** ----------- */
 
-    h1 {
-        font-size: var(--fs-laptop-23);
-    }
+/** At 992px Viewport */
+@media(min-width:992px) {
 
     /** list request Section */
     .request-group {
@@ -340,6 +335,21 @@ button[type="submit"]:hover {
     }
 
     /** ----------- */
+}
+
+/** ----------- */
+
+/** At 1280px Viewport */
+@media(min-width:1200px) {
+    /* ----------------------------------------------- */
+    /** || Reusable Styles */
+    /* ----------------------------------------------- */
+
+    h1 {
+        font-size: var(--fs-laptop-23);
+    }
+
+
 }
 
 /** ----------- */
