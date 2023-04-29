@@ -689,7 +689,16 @@ textarea {
     .modal-login,
     .modal-register,
     .modal-request {
-        width: 384px;
+        width: 400px;
+    }
+
+    .modal-register>form>.fullname-group {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    .modal-register>form>div>div {
+        margin-bottom: 0;
     }
 
     /** ----------- */
