@@ -340,11 +340,11 @@ header>div>button {
     width: 100%;
 }
 
-.hero-text-box>div>div>h1 {
+.hero-text-box>div:first-child>div>h1 {
     font-family: var(--ff-headline) !important;
 }
 
-.hero-text-box>div>div>p {
+.hero-text-box>div:first-child>div>p {
     font-size: var(--fs-small-14);
     font-weight: var(--fw-regular);
     line-height: 135%;
@@ -730,101 +730,45 @@ textarea {
         font-size: var(--fs-laptop-23);
     }
 
+    /** header */
+    header>div>*,
+    .fullname,
+    .menu-drop-down * {
+        font-size: var(--fs-laptop-16);
+    }
+
+    /** ----------- */
 
     /** hero-text-box Section */
-    /* .hero-text-box>div {
-        display: flex;
-    }
 
-    .hero-text-box>div>img {
-        order: 2;
-        width: 400px;
-    }
-
-    .hero-text-box>div>div {
-        order: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .hero-text-box>div>div>h1 {
+    .hero-text-box>div:first-child>div>h1 {
         width: 50%;
         font-size: var(--fs-laptop-55);
     }
 
-    .hero-text-box>div>div>p {
+    .hero-text-box>div:first-child>div>p {
         width: 60%;
-    } */
-
-    /** ----------- */
-
-    /** modal login, modal register & modal request */
-    /* .modal-login,
-    .modal-register,
-    .modal-request {
-        width: 384px;
-    } */
-
-    /** ----------- */
-
-    /** recommended Section */
-    .card>p {
-        font-size: var(--fs-laptop-18);
-    }
-
-    .card>p:last-child,
-    .view>p {
-        font-size: var(--fs-laptop-12);
-    }
-
-
-    /* .swiper-button-next:after,
-    .swiper-button-prev:after {
-        display: block;
-    } */
-
-    /** ----------- */
-
-    /* * categories Section */
-    /* .category-slider button {
-        font-size: var(--fs-laptop-14);
     }
 
     .lesson>form {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        column-gap: 20px;
-        row-gap: 25px;
     }
 
-    .lesson button {
-        flex-direction: column;
-    }
+    /** ----------- */
 
-    .lesson img {
-        width: 100%;
-        max-width: none;
-        height: 125px;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
+    /** recommended Section & categories Section*/
+    .card>p,
     .lesson .content>p:first-child {
         font-size: var(--fs-laptop-18);
     }
 
+    .card>p:last-child,
+    .view>p,
     .lesson .content>p:last-child {
         font-size: var(--fs-laptop-12);
     }
 
-    .swiper-wrapper {
-        cursor: auto !important;
-    } */
-
     /** ----------- */
-
 
 }
 
@@ -833,27 +777,20 @@ textarea {
 /** At 1600px Viewport */
 @media(min-width:1600px) {
 
-    /** hero-text-box Section */
-    .hero-text-box>div>div {
-        width: 70%;
+    header,
+    section,
+    footer {
+        margin: 0 200px;
     }
 
-    .hero-text-box>div>div>h1 {
-        width: 450px;
+    header {
+        margin-top: 22px;
     }
 
-    .hero-text-box>div>div>p {
-        width: 500px;
+    section,
+    footer {
+        margin-bottom: 55px;
     }
-
-    /** ----------- */
-
-    /** categories Section */
-    .lesson>form {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    /** ----------- */
 }
 
 /** ----------- */
