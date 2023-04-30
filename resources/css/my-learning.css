@@ -395,6 +395,12 @@ button[type="submit"]:hover {
         font-size: var(--fs-laptop-23);
     }
 
+    /** categories Section */
+    .lesson>form {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    /** ----------- */
 
 }
 
@@ -403,12 +409,21 @@ button[type="submit"]:hover {
 /** At 1600px Viewport */
 @media(min-width:1600px) {
 
-    /** categories Section */
-    .lesson>form {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    header,
+    section,
+    footer {
+        margin: 0 250px;
     }
 
-    /** ----------- */
+    header {
+        margin-top: 22px;
+        margin-bottom: 15px;
+    }
+
+    section,
+    footer {
+        margin-bottom: 55px;
+    }
 }
 
 /** ----------- */
