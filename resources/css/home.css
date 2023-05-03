@@ -194,6 +194,28 @@ nav>a {
     font-size: var(--fs-small-14);
 }
 
+input[type="file"] {
+    display: none;
+}
+
+.photo-profile-field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-profile-field>label[for="photo_profile"] {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.photo-profile-field>p {
+    font-size: var(--fs-small-11);
+    color: var(--clr-new);
+}
+
 .fullname-group>div:last-child {
     margin-bottom: 0;
 }

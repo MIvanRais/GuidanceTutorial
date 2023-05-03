@@ -169,3 +169,21 @@ expandLess.addEventListener('click', () => {
 })
 
 // ** -----------
+
+// **upload an image interactively
+const inputFile = document.querySelector('input[type="file"]');
+const imgName = document.querySelector('.photo-profile-field>p');
+
+function updateImageDisplay() {
+    // **stores 'files' object in the file variable.
+    const file = inputFile.files;
+
+    // **check an user already to upload an image
+    if (file.length === 1) {
+        // **Change the content inside the p tag according the selected image
+        imgName.innerText = file[0].name;
+    }
+}
+
+inputFile.addEventListener('change', updateImageDisplay);
+// **-----------------------------
