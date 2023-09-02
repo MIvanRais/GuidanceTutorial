@@ -72,14 +72,16 @@
                         fill="#30314B" />
                 </svg>
             </div>
-            <form action="something" method="post">
+            <form action="something" method="post" id="form-login" novalidate>
                 <div class="username-group">
                     <label for="username">Username</label>
-                    <input type="text" name="" id="username" required>
+                    <input type="text" name="" id="username-login" required>
+                    <span class="validation">Username is required</span>
                 </div>
                 <div class="password-group">
                     <label for="password">Password</label>
-                    <input type="password" name="" id="password" required>
+                    <input type="password" name="" id="password-login" required>
+                    <span class="validation">Password is required</span>
                 </div>
                 <button type="submit">Login</button>
             </form>
@@ -592,6 +594,7 @@
     <script defer src="vendors/js/swiper-home.js"></script>
     <script defer src="resources/js/home.js"></script>
     <script defer src="resources/js/home-responsive.js"></script>
+    <script defer src="resources/js/validation-forms.js"></script>
 </body>
 
 </html>

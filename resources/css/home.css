@@ -58,6 +58,14 @@ hr {
     ;
 }
 
+/** validation form */
+.validation {
+    display: none;
+    font-size: 0.875rem;
+    color: rgb(236, 11, 11);
+    margin-top: 8px;
+}
+
 /** hidden scroll style */
 .scroll-hidden {
     overflow: hidden;

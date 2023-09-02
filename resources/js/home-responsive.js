@@ -133,7 +133,7 @@ function removeLoginButton(widthViewport) {
     }
 }
 
-removeLoginButton(minWidth768);  //** Call function at run time
+// removeLoginButton(minWidth768);  //** Call function at run time
 // ** -----------
 
 // **Remove hr Elements Inside Lesson//
