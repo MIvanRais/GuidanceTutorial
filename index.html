@@ -75,12 +75,12 @@
             <form action="something" method="post" id="form-login" novalidate>
                 <div class="username-group">
                     <label for="username">Username</label>
-                    <input type="text" name="" id="username-login" required>
+                    <input type="text" name="" id="username-login" required autocomplete="off">
                     <span class="validation">Username is required</span>
                 </div>
                 <div class="password-group">
                     <label for="password">Password</label>
-                    <input type="password" name="" id="password-login" required>
+                    <input type="password" name="" id="password-login" required autocomplete="off">
                     <span class="validation">Password is required</span>
                 </div>
                 <button type="submit">Login</button>
@@ -99,32 +99,37 @@
                         fill="#30314B" />
                 </svg>
             </div>
-            <form action="#" method="post">
+            <form action="#" method="post" id="form-register" novalidate>
                 <div>
                     <label for="username">Username</label>
-                    <input type="text" name="" id="username" required>
+                    <input type="text" name="" id="username-register" required autocomplete="off">
+                    <span class="validation"></span>
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" name="" id="password" required>
+                    <input type="password" name="" id="password-register" required autocomplete="off">
+                    <span class="validation"></span>
                 </div>
                 <div class="fullname-group">
                     <div>
-                        <label for="firstname">Firstname</label>
-                        <input type="text" name="" id="firstname" required>
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="" id="firstname" required autocomplete="off">
+                        <span class="validation"></span>
                     </div>
                     <div>
-                        <label for="lastname">Lastname</label>
-                        <input type="text" name="" id="lastname" required>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="" id="lastname" required autocomplete="off">
+                        <span class="validation"></span>
                     </div>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="" id="email" required>
+                    <input type="email" name="" id="email" required autocomplete="off">
+                    <span class="validation"></span>
                 </div>
                 <div class="gender-field">
                     <p>Gender</p>
-                    <div>
+                    <div id="genders">
                         <div>
                             <input type="radio" name="gender" id="male" required>
                             <label for="male">Male</label>
@@ -134,15 +139,20 @@
                             <label for="female">Female</label>
                         </div>
                     </div>
+                    <span class="validation"></span>
                 </div>
                 <div>
                     <label for="phonenumber">Phone Number</label>
-                    <input type="text" name="" id="phonenumber" required>
+                    <input type="tel" name="" id="phonenumber" required autocomplete="off">
+                    <span class="validation"></span>
                 </div>
                 <div class="photo-profile-field">
-                    <label for="photo_profile">Choose Photo</label>
-                    <p>No file currently selected for upload</p>
-                    <input type="file" name="photo_profile" id="photo_profile" accept=".jpg, .jpeg, .png" required>
+                    <div>
+                        <label for="photo_profile">Choose Photo</label>
+                        <p>No file currently selected for upload</p>
+                        <input type="file" name="photo_profile" id="photo_profile" required>
+                    </div>
+                    <span class="validation"></span>
                 </div>
                 <button type="submit">Register</button>
             </form>
@@ -594,7 +604,7 @@
     <script defer src="vendors/js/swiper-home.js"></script>
     <script defer src="resources/js/home.js"></script>
     <script defer src="resources/js/home-responsive.js"></script>
-    <script defer src="resources/js/validation-forms.js"></script>
+    <script defer src="resources/js/validation-forms-home.js"></script>
 </body>
 
 </html>

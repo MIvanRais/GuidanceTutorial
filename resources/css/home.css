@@ -66,6 +66,14 @@ hr {
     margin-top: 8px;
 }
 
+.validation-login {
+    display: block;
+}
+
+.validation-register {
+    display: block;
+}
+
 /** hidden scroll style */
 .scroll-hidden {
     overflow: hidden;
@@ -206,7 +214,7 @@ input[type="file"] {
     display: none;
 }
 
-.photo-profile-field {
+.photo-profile-field>div {
     margin-bottom: 20px;
     display: flex;
     flex-direction: row !important;
@@ -214,12 +222,12 @@ input[type="file"] {
     align-items: center;
 }
 
-.photo-profile-field>label[for="photo_profile"] {
+.photo-profile-field>div>label[for="photo_profile"] {
     margin-bottom: 0;
     cursor: pointer;
 }
 
-.photo-profile-field>p {
+.photo-profile-field>div>p {
     font-size: var(--fs-small-11);
     color: var(--clr-new);
 }
@@ -712,7 +720,7 @@ textarea {
     .modal-login,
     .modal-register,
     .modal-request {
-        width: 400px;
+        width: 500px;
     }
 
     .modal-register>form>.fullname-group {
@@ -722,6 +730,14 @@ textarea {
 
     .modal-register>form>div>div {
         margin-bottom: 0;
+    }
+
+    .fullname-group>div {
+        width: 100%;
+    }
+
+    .fullname-group>div:first-child {
+        margin-right: 10px;
     }
 
     /** ----------- */
