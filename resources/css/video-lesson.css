@@ -56,6 +56,14 @@ h3 {
     -o-transform: translate3d(0px, 0, 0) !important;
 }
 
+button:disabled,
+button[disabled] {
+    background-color: #ada9a8 !important;
+    border-color: #ada9a8 !important;
+    color: white;
+    cursor: default;
+}
+
 /** header */
 header {
     display: flex;
