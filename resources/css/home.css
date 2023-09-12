@@ -74,6 +74,10 @@ hr {
     display: block;
 }
 
+.validation-request {
+    display: block;
+}
+
 /** hidden scroll style */
 .scroll-hidden {
     overflow: hidden;

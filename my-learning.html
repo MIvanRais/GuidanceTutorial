@@ -209,14 +209,16 @@
                         fill="#30314B" />
                 </svg>
             </div>
-            <form action="#" method="post">
+            <form action="#" method="post" novalidate>
                 <div class="topic-group">
                     <label for="topic">Topic</label>
                     <input type="text" name="" id="topic" required>
+                    <span class="validation"></span>
                 </div>
                 <div class="reason-group">
                     <label for="reason">Reason</label>
                     <textarea name="" id="reason" required></textarea>
+                    <span class="validation"></span>
                 </div>
                 <button type="submit">Send</button>
             </form>
@@ -229,6 +231,7 @@
     <script defer src="vendors/js/swiper-my-learning.js"></script>
     <script defer src="resources/js/my-learning.js"></script>
     <script defer src="resources/js/my-learning-responsive.js"></script>
+    <script defer src="resources/js/validation-forms-request-lesson.js"></script>
 </body>
 
 </html>

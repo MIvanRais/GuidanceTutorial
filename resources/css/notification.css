@@ -53,6 +53,18 @@ dialog::backdrop {
     background-color: hsla(0, 0%, 0%, 0.5);
 }
 
+/** validation form */
+.validation {
+    display: none;
+    font-size: 0.875rem;
+    color: rgb(236, 11, 11);
+    margin-top: 8px;
+}
+
+.validation-request {
+    display: block;
+}
+
 /** header */
 header {
     display: flex;
