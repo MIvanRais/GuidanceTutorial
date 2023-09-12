@@ -36,25 +36,28 @@
         <h1>Fullname</h1>
     </header>
     <section class="update-profile">
-        <form action="#" method="post">
+        <form action="#" method="post" novalidate>
             <div>
                 <div>
                     <div>
                         <label for="firstname">Firstname</label>
-                        <input type="text" name="firstname" id="firstname" required>
+                        <input type="text" name="firstname" id="firstname" autocomplete="off" required>
+                        <span class="validation"></span>
                     </div>
                     <div>
                         <label for="lastname">Lastname</label>
-                        <input type="text" name="lastname" id="lastname" required>
+                        <input type="text" name="lastname" id="lastname" autocomplete="off" required>
+                        <span class="validation"></span>
                     </div>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="" id="email" required>
+                    <input type="email" name="" id="email" autocomplete="off" required>
+                    <span class="validation"></span>
                 </div>
                 <div class="gender-field">
                     <p>Gender</p>
-                    <div>
+                    <div id="genders">
                         <div>
                             <input type="radio" name="gender" id="male" required>
                             <label for="male">Male</label>
@@ -64,15 +67,20 @@
                             <label for="female">Female</label>
                         </div>
                     </div>
+                    <span class="validation"></span>
                 </div>
                 <div>
                     <label for="phone-number">Phone Number</label>
-                    <input type="text" name="" id="phone-number" required>
+                    <input type="text" name="" id="phone-number" autocomplete="off" required>
+                    <span class="validation"></span>
                 </div>
                 <div class="photo-profile-field">
-                    <label for="photo_profile">Choose Photo</label>
-                    <p>No file currently selected for upload</p>
-                    <input type="file" name="photo_profile" id="photo_profile" accept=".jpg, .jpeg, .png" required>
+                    <div>
+                        <label for="photo_profile">Choose Photo</label>
+                        <p>No file currently selected for upload</p>
+                        <input type="file" name="photo_profile" id="photo_profile" required>
+                    </div>
+                    <span class="validation"></span>
                 </div>
             </div>
             <button type="submit">Update</button>
@@ -80,6 +88,7 @@
     </section>
 
     <script defer src="resources/js/update-profile.js"></script>
+    <script defer src="resources/js/validation-forms-update-profile.js"></script>
 </body>
 
 </html>

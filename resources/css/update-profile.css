@@ -49,6 +49,18 @@ img {
     clip-path: circle();
 }
 
+/** validation form */
+.validation {
+    display: none;
+    font-size: 0.875rem;
+    color: rgb(236, 11, 11);
+    margin-top: 8px;
+}
+
+.display-validation {
+    display: block;
+}
+
 /** ----------- */
 
 /** update profile Section */
@@ -97,20 +109,20 @@ input[type="file"] {
     display: none;
 }
 
-.photo-profile-field {
-    margin-bottom: 20px;
+.photo-profile-field>div {
+    /* margin-bottom: 20px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.photo-profile-field>label {
+.photo-profile-field>div>label {
     margin-bottom: 0;
     cursor: pointer;
 }
 
-.photo-profile-field>p {
+.photo-profile-field>div>p {
     font-size: var(--fs-small-11);
     color: var(--clr-new);
 }
