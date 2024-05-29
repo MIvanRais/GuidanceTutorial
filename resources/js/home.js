@@ -71,3 +71,41 @@ closeRequestBtn.addEventListener('click', () => {
     document.body.classList.remove("scroll-hidden");
 })
 // **--------------//
+
+// **back to top button //
+let button = document.querySelector("#backToTop");
+let progressCircle = document.querySelector('#progress-circle');
+
+function getScrollPercentage() {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight;
+    const scrollableHeight = scrollHeight - clientHeight;
+    const scrollPercentage = Math.floor((scrollTop / scrollableHeight) * 100);
+    return scrollPercentage;
+}
+
+window.addEventListener('scroll', () => scrollFunction())
+
+function scrollFunction() {
+    if (document.documentElement.scrollTop > 20) {
+        button.classList.remove('disappear');
+        button.classList.add('appear');
+        progressCircle.style.cssText = `--percent: ${getScrollPercentage()}`
+    } else {
+        button.classList.remove('appear');
+        button.classList.add('disappear');
+        progressCircle.style.cssText = `--percent: 0`
+    }
+}
+
+button.addEventListener('click', () => scrollToTop());
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// **--------------//
